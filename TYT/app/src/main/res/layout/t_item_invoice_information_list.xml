@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MyCardView"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/selector_mine_item_background"
+        android:clickable="true"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:addStatesFromChildren="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.qskj.tyt.view.AlwaysMarqueeTextView
+                android:id="@+id/tv_invoice_code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="@string/invoice_code"
+                android:textColor="#444444"
+                android:textSize="@dimen/textSize_16sp"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_invoice_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="@string/invoice_amount"
+                android:textSize="@dimen/textSize_14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll1"
+            android:text="@string/type"
+            android:textSize="@dimen/textSize_12sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_invoice_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll1"
+            android:layout_toRightOf="@id/tv_type"
+            android:text="@string/invoice_status"
+            android:textSize="@dimen/textSize_12sp" />
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_createDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/ll1"
+            android:text="@string/createDate"
+            android:textSize="@dimen/textSize_12sp" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="wrap_content"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/tv_createDate"
+            android:layout_marginTop="10dp"
+            android:background="@color/textView_home_bg" />
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:padding="3dp">
+
+            <!-- 外销发票号 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:weightSum="3">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_saleOrder_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/saleOrder"
+                    android:textSize="@dimen/textSize_12sp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_saleOrder"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textSize="@dimen/textSize_12sp" />
+
+            </LinearLayout>
+
+            <!-- 订单流水号 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:weightSum="3">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_orderCode_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/orderCode"
+                    android:textSize="@dimen/textSize_12sp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_orderCode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textSize="@dimen/textSize_12sp" />
+
+            </LinearLayout>
+
+            <!-- 增票确认日期 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:weightSum="3">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_confirmDate_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/confirmDate"
+                    android:textSize="@dimen/textSize_12sp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_confirmDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textSize="@dimen/textSize_12sp" />
+
+            </LinearLayout>
+
+            <!-- 开票单位 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:weightSum="3">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_accountName_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/accountName"
+                    android:textSize="@dimen/textSize_12sp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_accountName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textSize="@dimen/textSize_12sp" />
+
+            </LinearLayout>
+
+
+            <!-- 开票单位名称 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:weightSum="3">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_draweerName_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/draweerName"
+                    android:textSize="@dimen/textSize_12sp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_draweerName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textSize="@dimen/textSize_12sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="wrap_content"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/ll"
+            android:layout_marginTop="10dp"
+            android:background="@color/textView_home_bg" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/line1"
+            android:layout_marginTop="5dp"
+            android:drawablePadding="5dp"
+            android:drawableRight="@mipmap/ic_arrow_next"
+            android:text="@string/check_details"
+            android:textSize="@dimen/textSize_11sp" />
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

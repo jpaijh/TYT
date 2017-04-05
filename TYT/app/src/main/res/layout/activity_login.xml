@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:fitsSystemWindows="true">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/toolbar_background"
+        android:gravity="top"
+        android:minHeight="@dimen/toolbar_height"
+        app:layout_collapseMode="pin"
+        app:navigationIcon="@mipmap/ic_back"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleMarginTop="15dp"
+        app:titleTextColor="@color/toolbar_title">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/toolbar_title"
+            android:textSize="@dimen/textSize_18sp"
+            android:textStyle="normal" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nested_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@null"
+                    android:src="@mipmap/ic_login_logo_tyt" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:clickable="true"
+                android:fitsSystemWindows="true"
+                android:orientation="vertical"
+                android:paddingBottom="5dp"
+                android:paddingTop="20dp">
+
+                <!--android:completionHint="历史账号" 这个参数会在自动提示的list最后一个条目显示-->
+                <!-- 限制输入字符：android:digits="_0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"-->
+                <com.qskj.tyt.view.AppCompatAutoCompleteClearTextView
+                    android:id="@+id/tv_user_name"
+                    style="@style/editText"
+                    android:completionThreshold="1"
+                    android:drawableLeft="@drawable/selector_icon_user_login"
+                    android:hint="请输入用户名"
+                    android:inputType="text" />
+
+                <com.qskj.tyt.view.AppCompatClearEditText
+                    android:id="@+id/et_password"
+                    style="@style/editText"
+                    android:layout_marginTop="15dp"
+                    android:drawableLeft="@drawable/selector_icon_password_login"
+                    android:hint="请输入密码"
+                    android:inputType="textPassword" />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btn_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shape_rect_login_tint_tyt"
+                    android:enabled="false"
+                    android:text="登 录"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_14sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MyCardView"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/selector_mine_item_background"
+        android:clickable="true"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:addStatesFromChildren="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <!-- 中文品名-->
+            <com.qskj.tyt.view.AlwaysMarqueeTextView
+                android:id="@+id/tv_commodityManagementGrid_commodityNameCn"
+                style="@style/AlwaysMarqueeTextView_BigSize"
+                android:text="@string/commodityManagementGrid_commodityNameCn" />
+
+            <!-- 状态 -->
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_commodityManagementGrid_statusView"
+                style="@style/AppcompatTextView_PaddingLeft5_BigSize"
+                android:text="@string/commodityManagementGrid_statusView" />
+
+        </LinearLayout>
+
+        <!-- HS编码 -->
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_commodityManagementGrid_hsCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll"
+            android:text="@string/commodityManagementGrid_hsCode"
+            android:textSize="@dimen/textSize_12sp" />
+
+        <!-- 商品备案号 -->
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_commodityManagementGrid_customsRecordNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/ll"
+            android:text="@string/commodityManagementGrid_customsRecordNo"
+            android:textSize="@dimen/textSize_12sp" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="wrap_content"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/tv_commodityManagementGrid_customsRecordNo"
+            android:layout_marginTop="10dp"
+            android:background="@color/textView_home_bg" />
+
+        <!--查看详情-->
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/line"
+            android:layout_marginTop="5dp"
+            android:drawablePadding="5dp"
+            android:drawableRight="@mipmap/ic_arrow_next"
+            android:text="@string/check_details"
+            android:textSize="@dimen/textSize_11sp" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

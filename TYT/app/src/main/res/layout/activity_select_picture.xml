@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f9f9f9"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_title_left" />
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:horizontalSpacing="3dp"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:verticalSpacing="5dp" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:background="#fff"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_all_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_mine_item_background"
+        android:drawablePadding="5dp"
+        android:drawableRight="@mipmap/ic_expand"
+        android:gravity="right"
+        android:padding="15dp"
+        android:text="所有图片"
+        android:textColor="#333333"
+        android:textSize="@dimen/textSize_16sp" />
+
+    <!--50848484-->
+
+</LinearLayout>

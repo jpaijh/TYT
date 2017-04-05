@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 控制GridView的列数 -->
+    <integer name="gridView_columns">3</integer>
+    <!-- 控制GridView网格线的宽度-->
+    <integer name="gridView_line_width">1</integer>
+</resources>

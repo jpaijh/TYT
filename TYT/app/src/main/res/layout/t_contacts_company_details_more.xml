@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <include layout="@layout/toolbar_title_left" />
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:visibility="gone">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_ll_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#606060"
+            android:textSize="@dimen/textSize_14sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_ll_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="#333333"
+            android:textSize="@dimen/textSize_14sp" />
+
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll">
+
+        <include layout="@layout/recyclerview" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <include layout="@layout/tv_no_data" />
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frameLayout_head"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:visibility="gone">
+
+    <android.support.v7.widget.AppCompatImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:fitsSystemWindows="true"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_allmanage_details_head_tyt"
+        app:layout_collapseMode="pin" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_head_big_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="大标题"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_24sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_head_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:text="标题"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_18sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_head_subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:text="子标题"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_14sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_head_subtitle2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:text="子标题2"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_14sp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</FrameLayout>
+
+
+

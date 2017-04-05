@@ -1,0 +1,198 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f9f9f9"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_title_left" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_user_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_mine_item_background"
+                    android:clickable="true"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="10dp">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        style="@style/userInfo_AppcompatTextView1"
+                        android:text="@string/user_icon" />
+
+                    <!--app:border_color="@color/mine_text_mail"-->
+                    <!--app:border_width="0.5dp"-->
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/img_user_icon"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@+id/img_arrow_next1"
+                        android:src="@mipmap/ic_user_head" />
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/img_arrow_next1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/ic_arrow_next" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <!--登录名-->
+                <RelativeLayout
+                    android:id="@+id/rl_login_name"
+                    style="@style/userInfo_RelativeLayout">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        style="@style/userInfo_AppcompatTextView1"
+                        android:text="@string/login_name" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_login_name"
+                        style="@style/userInfo_AppcompatTextView2" />
+
+                </RelativeLayout>
+
+                <View style="@style/userInfo_line" />
+
+                <!--用户名-->
+                <RelativeLayout
+                    android:id="@+id/rl_user_name"
+                    style="@style/userInfo_RelativeLayout">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        style="@style/userInfo_AppcompatTextView1"
+                        android:text="@string/user_name" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_username"
+                        style="@style/userInfo_AppcompatTextView2" />
+
+                </RelativeLayout>
+
+                <View style="@style/userInfo_line" />
+
+                <!--账户名-->
+                <RelativeLayout
+                    android:id="@+id/rl_pltAccountName"
+                    style="@style/userInfo_RelativeLayout">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        style="@style/userInfo_AppcompatTextView1"
+                        android:text="@string/pltAccountName" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_pltAccountName"
+                        style="@style/userInfo_AppcompatTextView2" />
+
+                </RelativeLayout>
+
+                <View style="@style/userInfo_line" />
+
+                <!--手机号码-->
+                <RelativeLayout
+                    android:id="@+id/rl_mobile_phone"
+                    style="@style/userInfo_RelativeLayout">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        style="@style/userInfo_AppcompatTextView1"
+                        android:text="@string/mobilephone_number" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_mobile"
+                        style="@style/userInfo_AppcompatTextView2" />
+
+                </RelativeLayout>
+
+                <View style="@style/userInfo_line" />
+
+                <!-- 邮箱 -->
+                <RelativeLayout
+                    android:id="@+id/rl_mail"
+                    style="@style/userInfo_RelativeLayout">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        style="@style/userInfo_AppcompatTextView1"
+                        android:text="@string/mail" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_email"
+                        style="@style/userInfo_AppcompatTextView2" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_accountNature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <View style="@style/userInfo_line" />
+
+                    <!--角色-->
+                    <RelativeLayout
+                        android:id="@+id/rl_accountNature"
+                        style="@style/userInfo_RelativeLayout">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/userInfo_AppcompatTextView1"
+                            android:text="@string/accountNature" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/tv_accountNature"
+                            style="@style/userInfo_AppcompatTextView2" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/selector_btn_logout_tyt"
+                android:text="退出登录"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_14sp" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

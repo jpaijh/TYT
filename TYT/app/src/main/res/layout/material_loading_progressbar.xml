@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lsjwzh.widget.materialloadingprogressbar.CircleProgressBar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/progressbar"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:layout_centerInParent="true"
+    android:layout_gravity="center"
+    android:visibility="gone"
+    app:mlpb_arrow_height="5dp"
+    app:mlpb_arrow_width="10dp"
+    app:mlpb_enable_circle_background="true"
+    app:mlpb_progress_color="@color/color_theme"
+    app:mlpb_progress_stoke_width="3dp"
+    app:mlpb_progress_text_visibility="invisible"
+    app:mlpb_show_arrow="true" />

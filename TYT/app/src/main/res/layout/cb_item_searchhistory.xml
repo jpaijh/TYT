@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_mine_item_background"
+    android:clickable="true"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/ic_search"
+        android:drawablePadding="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textSize_14sp" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_clear_history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recyclerview"
+        android:layout_centerInParent="true"
+        android:drawableLeft="@mipmap/ic_clear"
+        android:drawablePadding="10dp"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:text="清空历史搜索记录"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textSize_14sp"
+        android:visibility="gone" />
+
+</RelativeLayout>
+
+

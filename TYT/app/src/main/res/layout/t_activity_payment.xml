@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f9f9f9"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_title_left" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/black_alpha_32" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="12dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="12dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收款单位"
+            android:completionThreshold="1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSize_16sp" />
+
+        <com.qskj.tyt.view.AppCompatAutoCompleteClearTextView
+            android:id="@+id/tv_payee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:clickable="true"
+            android:hint="请输入收款单位"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColor="@color/black_alpha_176"
+            android:textSize="@dimen/textSize_16sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/black_alpha_32" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="12dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="12dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收款银行"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSize_16sp" />
+
+        <com.qskj.tyt.view.AppCompatAutoCompleteClearTextView
+            android:id="@+id/tv_receive_bank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:clickable="true"
+            android:completionThreshold="1"
+            android:hint="请输入收款银行"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColor="@color/black_alpha_176"
+            android:textSize="@dimen/textSize_16sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/black_alpha_32" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="12dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="12dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="银行账号"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSize_16sp" />
+
+        <com.qskj.tyt.view.AppCompatAutoCompleteClearTextView
+            android:id="@+id/tv_bankAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:clickable="true"
+            android:hint="请输入银行账号"
+            android:completionThreshold="1"
+            android:inputType="number"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColor="@color/black_alpha_176"
+            android:textSize="@dimen/textSize_16sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/black_alpha_32" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="15dp"
+        android:text="资金将会从「普通账户」中扣除"
+        android:textColor="@color/black_alpha_144"
+        android:textSize="@dimen/textSize_12sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/black_alpha_32" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="12dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="12dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支付金额"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSize_16sp" />
+
+        <com.qskj.tyt.view.AppCompatClearEditText
+            android:id="@+id/tv_pay_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:clickable="true"
+            android:digits="0123456789."
+            android:hint="请输入支付金额"
+            android:inputType="number"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColor="@color/black_alpha_176"
+            android:textSize="@dimen/textSize_16sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/black_alpha_32" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="普通账户余额："
+            android:textColor="@color/black_alpha_144"
+            android:textSize="@dimen/textSize_12sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_general_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_alpha_144"
+            android:textSize="@dimen/textSize_12sp" />
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_payment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector_btn_login_tyt"
+        android:text="提 款"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize_14sp" />
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.qskj.qst.activity.SearchActivity">
+
+    <item
+        android:id="@+id/action_reset"
+        android:icon="@mipmap/ic_reset"
+        android:orderInCategory="100"
+        android:title="重置"
+        app:showAsAction="always" />
+
+</menu>

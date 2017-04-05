@@ -1,0 +1,10 @@
+<android.support.design.widget.TabLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tabLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:tabBackground="@color/color_tab_background"
+    app:tabIndicatorColor="@color/color_tab_line"
+    app:tabSelectedTextColor="@color/color_tab_text_focus"
+    app:tabTextColor="@color/color_tab_text_unFocus" />
+

@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar_title_left" />
+
+        <include layout="@layout/tablayout" />
+
+        <include layout="@layout/viewpager" />
+
+    </LinearLayout>
+
+    <include layout="@layout/material_loading_progressbar" />
+
+</RelativeLayout>

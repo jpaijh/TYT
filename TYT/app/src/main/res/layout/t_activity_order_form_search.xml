@@ -1,0 +1,187 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_title_left" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 订单状态 -->
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_order_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="20dp">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/acct_order_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="20dp"
+                    android:drawableRight="@mipmap/ic_down"
+                    android:hint="@string/search_order_status"
+                    android:imeOptions="flagNoExtractUi"
+                    android:singleLine="true"
+                    android:textSize="@dimen/textSize_16sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- 外销发票号 -->
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_sale_invoice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="20dp">
+
+                <com.qskj.tyt.view.AppCompatAutoCompleteClearTextView
+                    android:id="@+id/acct_sale_invoice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:completionThreshold="1"
+                    android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    android:ems="10"
+                    android:hint="@string/search_sale_invoice"
+                    android:imeOptions="flagNoExtractUi"
+                    android:singleLine="true"
+                    android:textSize="@dimen/textSize_16sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="20dp">
+
+                <!-- 起止时间 -->
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_start_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <com.qskj.tyt.view.AppCompatAutoCompleteClearTextView
+                        android:id="@+id/acct_start_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/search_start_date"
+                        android:imeOptions="flagNoExtractUi"
+                        android:inputType="none"
+                        android:singleLine="true"
+                        android:textSize="@dimen/textSize_16sp" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!-- 结束时间 -->
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_end_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <com.qskj.tyt.view.AppCompatAutoCompleteClearTextView
+                        android:id="@+id/acct_end_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/search_end_date"
+                        android:imeOptions="flagNoExtractUi"
+                        android:inputType="none"
+                        android:singleLine="true"
+                        android:textSize="@dimen/textSize_16sp" />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <!-- 订单金额 -->
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_order_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="20dp">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/acct_order_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="20dp"
+                    android:drawableRight="@mipmap/ic_down"
+                    android:hint="@string/search_order_amount"
+                    android:imeOptions="flagNoExtractUi"
+                    android:singleLine="true"
+                    android:textSize="@dimen/textSize_16sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="5dp">
+
+                <!-- 最小金额 -->
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_min_amount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <com.qskj.tyt.view.AppCompatAutoCompleteClearTextView
+                        android:id="@+id/acct_min_amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/search_min_amount"
+                        android:imeOptions="flagNoExtractUi"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textSize="@dimen/textSize_16sp" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!-- 最大金额 -->
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_max_amount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <com.qskj.tyt.view.AppCompatAutoCompleteClearTextView
+                        android:id="@+id/acct_max_amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/search_max_amount"
+                        android:imeOptions="flagNoExtractUi"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textSize="@dimen/textSize_16sp" />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <include layout="@layout/appcompatbutton_search" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

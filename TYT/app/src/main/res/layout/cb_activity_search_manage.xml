@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_height"
+            android:background="@color/toolbar_background"
+            android:gravity="top"
+            android:minHeight="@dimen/toolbar_height"
+            app:layout_collapseMode="pin"
+            app:navigationIcon="@mipmap/ic_back"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:titleMarginTop="15dp"
+            app:titleTextColor="@color/toolbar_title">
+
+            <!--app:iconifiedByDefault="false" 设置搜索框默认是否自动缩小为图标-->
+            <!--app:searchIcon="@null" 设置搜索框左边的 搜索图标-->
+            <!--app:queryBackground="@android:drawable/editbox_background_normal" 搜索框的背景-->
+            <android.support.v7.widget.SearchView
+                android:id="@+id/search_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingRight="10dp"
+                app:defaultQueryHint="请输入关键字"
+                app:iconifiedByDefault="false"
+                app:searchIcon="@null" />
+
+            <!--<android.support.v7.widget.AppCompatTextView-->
+            <!--android:id="@+id/tv_search"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:clickable="true"-->
+            <!--android:text="搜索"-->
+            <!--android:textColor="@color/black_alpha_128"-->
+            <!--android:textSize="@dimen/textsize_16sp" />-->
+
+        </android.support.v7.widget.Toolbar>
+
+        <include layout="@layout/recyclerview" />
+
+    </LinearLayout>
+
+    <include layout="@layout/tv_no_search_data" />
+
+</RelativeLayout>

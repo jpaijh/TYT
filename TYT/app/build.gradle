@@ -1,0 +1,101 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '25.0.0'
+
+    defaultConfig {
+        applicationId "com.qskj.tyt"
+        minSdkVersion 15
+        targetSdkVersion 23
+        // 历史版本：versionCode 1 = 天易通 1.0 （已发布）
+        // 历史版本：versionCode 2 = 天易通 1.1 （已发布）
+        // 历史版本：versionCode 3 = 天易通 1.2.0 （已发布）
+        // 历史版本：versionCode 4 = 天易通 1.2.1 （当前版本,已发布）
+        // 新版本：versionCode 5 = 天易通 1.3.0 （下个版本，待发布...）
+        versionCode 4
+        versionName "天易通 1.2.1"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+// AndroidAnnotations 需要
+def AAVersion = '4.0.0' // 15/03/2016 The 4.0.0 release is out !（目前最新：检查日期 2016.4.7）
+apt {
+    arguments {
+        androidManifestFile variant.outputs[0]?.processResources?.manifestFile
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.google.android.gms:play-services-appindexing:8.4.0'
+    compile 'com.android.support:support-v4:23.3.0'
+    compile 'com.android.support:appcompat-v7:23.3.0'
+    // AndroidAnnotations
+    apt "org.androidannotations:androidannotations:$AAVersion"
+    // AndroidAnnotations
+    compile "org.androidannotations:androidannotations-api:$AAVersion"
+    // design
+    compile 'com.android.support:design:23.3.0'
+    // persent
+    compile 'com.android.support:percent:23.3.0'
+    // cardview
+    compile 'com.android.support:cardview-v7:23.3.0'
+    // Recyclerview
+    compile 'com.android.support:recyclerview-v7:23.3.0'
+    // flexibledivider:Recyclerview 下划线
+    compile 'com.yqritc:recyclerview-flexibledivider:1.2.5'
+    // circleimageview:圆形的ImageView
+    compile 'de.hdodenhof:circleimageview:1.3.0'
+    // material_loading_progressbar:MaterialDesign风格的loading progressbar
+    compile 'com.lsjwzh:materialloadingprogressbar:0.5.6-RELEASE'
+    // logutils:Log 日志工具
+    compile 'com.apkfuns.logutils:library:1.2.1'
+    // volley
+    compile 'com.mcxiaoke.volley:library:1.0.19'
+    // PhotoView: 图片放大缩小使用多点触控和双击，且支持多张图片水平滚动浏览
+    compile 'com.commit451:PhotoView:1.2.4'
+    // DecoView
+    compile 'com.github.bmarrdev:android-DecoView-charting:v0.9.6'
+    // Files:ImageLoader
+    compile files('libs/universal-image-loader-1.9.3.jar')
+    // Files:Fastjson
+    compile files('libs/fastjson-1.2.7.jar')
+    // ConvenientBanner：通用的广告栏控件，让你轻松实现广告头效果。支持无限循环，
+    // 可以设置自动翻页和时间(而且非常智能，手指触碰则暂停翻页，离开自动开始翻页。
+    // 你也可以设置在界面onPause的时候不进行自动翻页，onResume之后继续自动翻页)，并且提供多种翻页特效。
+    // 对比其他广告栏控件，大多都需要对源码进行改动才能加载网络图片，或者帮你集成不是你所需要的图片缓存库。
+    // 而这个库能让有代码洁癖的你欢喜，不需要对库源码进行修改你就可以使用任何你喜欢的网络图片库进行配合。
+    compile 'com.bigkoo:convenientbanner:2.0.5'
+    // 带各种翻页效果的Viewpager,可单独使用，目前为了配合convenientbanner使用可以有不同的翻页效果
+    compile 'com.ToxicBakery.viewpager.transforms:view-pager-transforms:1.2.32@aar'
+    // 带动画效果的提示对话框（有Loading,Error,Success状态）,它依赖于 compile 'com.pnikosis:materialish-progress:1.7'
+    compile 'cn.pedant.sweetalert:library:1.3'
+    // 透明指示层 2016.3.31
+    compile 'com.github.iammert:MaterialIntroView:1.5.2'
+    // Files：友盟自动更新SDK
+    compile files('libs/umeng-update-v2.6.0.1.jar')
+    // 友盟统计SDK
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    // Files:百度地图-基础地图SDK
+    compile files('libs/BaiduLBS_Android.jar')
+    // 一个material风格的view，提供了各种关于日期选择的功能，可以选择日期，选择时间，选择重复次数等，可以在不离开选择器的情况下在不同的选择界面间切换
+    compile 'com.appeaser.sublimepickerlibrary:sublimepickerlibrary:2.0.0'
+    // ultra-ptr：支持任何View的下拉刷新
+    // compile 'in.srain.cube:ultra-ptr:1.0.10'
+    // color资源 dimen 资源
+    // compile 'net.qiujuer.genius:res:1.0.0'
+}
+
+// DecoView 需要 ,MaterialIntroView 需要
+repositories {
+    maven { url "https://jitpack.io" }
+}

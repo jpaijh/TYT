@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    tools:ignore="MissingPrefix">
+
+    <!-- 如果高度为 包裹内容 那么字体就不会移位，但是中间线不能连到一起
+         如果高度是 填充布局 那么字体会移位 -->
+    <com.qskj.tyt.view.TimeLine.TimeLineMarker
+        android:id="@+id/item_time_line_mark"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingBottom="@dimen/lay_16"
+        android:paddingLeft="10dp"
+        android:paddingRight="@dimen/lay_4"
+        android:paddingTop="@dimen/lay_16"
+        app:beginLine="@color/black_alpha_32"
+        app:endLine="@color/black_alpha_32"
+        app:lineSize="2dp"
+        app:marker="@drawable/shape_timeline_default_marker"
+        app:markerSize="14dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/item_time_line_txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:paddingBottom="@dimen/lay_16"
+            android:paddingLeft="@dimen/lay_4"
+            android:paddingRight="@dimen/lay_4"
+            android:paddingTop="@dimen/lay_16"
+            android:text="Hello World"
+            android:textColor="@color/grey_600"
+            android:textSize="@dimen/textSize_12sp" />
+
+        <TextView
+            android:id="@+id/item_time_line_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:paddingBottom="@dimen/lay_16"
+            android:paddingLeft="@dimen/lay_4"
+            android:paddingRight="@dimen/lay_4"
+            android:paddingTop="@dimen/lay_16"
+            android:text="Hello World"
+            android:textColor="@color/grey_600"
+            android:textSize="@dimen/textSize_12sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

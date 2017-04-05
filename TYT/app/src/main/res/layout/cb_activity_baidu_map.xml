@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_title_left" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="right|bottom"
+            android:layout_margin="20dp"
+            android:background="@drawable/shape_rect_gray_stroke_bg"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_max"
+                style="@style/BaiduMap_AppCompatImageView"
+                android:src="@drawable/selector_btn_max" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="wrap_content"
+                android:background="@color/black_alpha_16" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_min"
+                style="@style/BaiduMap_AppCompatImageView"
+                android:src="@drawable/selector_btn_min" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,1048 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f6f6f6">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <!-- 单位名称 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:weightSum="4">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/orderDelivery_businessEnterpriseName1"
+                        android:textColor="#606060"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_orderDelivery_businessEnterpriseName1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="3"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                </LinearLayout>
+
+                <!-- 海关编码 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:weightSum="4">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/orderDelivery_businessEnterpriseCode1"
+                        android:textColor="#606060"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_orderDelivery_businessEnterpriseCode1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="3"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                </LinearLayout>
+
+
+                <!-- 出口口岸 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:weightSum="4">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/customsName"
+                        android:textColor="#606060"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_customsName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="3"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                </LinearLayout>
+
+                <!-- 外销协议 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:weightSum="4">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/salesOrder"
+                        android:textColor="#606060"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_salesOrder"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="3"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                </LinearLayout>
+
+                <!-- 提单编号 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:weightSum="4">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/blNo"
+                        android:textColor="#606060"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_blNo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="3"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                </LinearLayout>
+
+
+                <!-- 船名 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:weightSum="4">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/vesselName"
+                        android:textColor="#606060"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_vesselName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="3"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                </LinearLayout>
+
+                <!-- 船次 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:weightSum="4">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/voyageNo"
+                        android:textColor="#606060"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_voyageNo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="3"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                </LinearLayout>
+
+                <!-- 出口日期 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:weightSum="4">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/actualCustomsClearanceDate"
+                        android:textColor="#606060"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_actualCustomsClearanceDate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="3"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                </LinearLayout>
+
+                <!-- 申报日期 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:weightSum="4">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/orderDelivery_declareDate"
+                        android:textColor="#606060"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_orderDelivery_declareDate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="3"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                </LinearLayout>
+
+                <!-- 报关单号 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="5dp"
+                    android:weightSum="4">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/ckCustomsClearanceNo"
+                        android:textColor="#606060"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_ckCustomsClearanceNo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="3"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <!-- 件数 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:weightSum="4">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/packingQuantity1"
+                        android:textColor="#606060"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_packingQuantity1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="3"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                </LinearLayout>
+
+                <!-- 体积 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:weightSum="4">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/vol1"
+                        android:textColor="#606060"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_vol1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="3"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                </LinearLayout>
+
+                <!-- 毛重 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:weightSum="4">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/grossWeight1"
+                        android:textColor="#606060"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_grossWeight1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="3"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                </LinearLayout>
+
+                <!-- 净重 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:weightSum="4">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/netWeight"
+                        android:textColor="#606060"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_netWeight"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="3"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                </LinearLayout>
+
+                <!-- 币别 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:weightSum="4">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/currency"
+                        android:textColor="#606060"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_currency"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="3"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                </LinearLayout>
+
+                <!-- 金额 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:weightSum="4">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/amount"
+                        android:textColor="#606060"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_amount"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="3"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                </LinearLayout>
+
+                <!-- 唛头 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:weightSum="4">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/frontMark1"
+                        android:textColor="#606060"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_frontMark1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="3"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                </LinearLayout>
+
+                <!-- 备注 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="5dp"
+                    android:weightSum="4">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/remark1"
+                        android:textColor="#606060"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_remark1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="3"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <!-- 目的国 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:weightSum="4">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/finalDestCountryCn"
+                        android:textColor="#606060"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_finalDestCountryCn"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="3"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                </LinearLayout>
+
+                <!-- 目的港 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:weightSum="4">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/destinationPortCn1"
+                        android:textColor="#606060"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_destinationPortCn1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="3"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                </LinearLayout>
+
+                <!-- 价格条款 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:weightSum="4">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/priceTerm"
+                        android:textColor="#606060"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_priceTerm"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="3"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                </LinearLayout>
+
+
+                <!-- 境内货源地 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:weightSum="4">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/source"
+                        android:textColor="#606060"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_source"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="3"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                </LinearLayout>
+
+
+                <!-- 发货单位代码 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:weightSum="4">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/orderDelivery_deliveryEnterpriseCode"
+                        android:textColor="#606060"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_orderDelivery_deliveryEnterpriseCode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="3"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                </LinearLayout>
+
+                <!-- 发货单位名称 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:weightSum="4">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/orderDelivery_deliveryEnterpriseName"
+                        android:textColor="#606060"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_orderDelivery_deliveryEnterpriseName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="3"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                </LinearLayout>
+
+                <!-- 申报单位代码 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:weightSum="4">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/orderDelivery_declareEnterpriseCode"
+                        android:textColor="#606060"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_orderDelivery_declareEnterpriseCode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="3"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                </LinearLayout>
+
+                <!-- 申报单位名称 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="5dp"
+                    android:weightSum="4">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/orderDelivery_declareEnterpriseName"
+                        android:textColor="#606060"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_orderDelivery_declareEnterpriseName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="3"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <!-- 结汇方式 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:weightSum="4">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/payment1"
+                        android:textColor="#606060"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_payment1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="3"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                </LinearLayout>
+                <!-- 运输方式 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:weightSum="4">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/modeOfTransportationString"
+                        android:textColor="#606060"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_modeOfTransportationString"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="3"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                </LinearLayout>
+
+
+                <!-- 备案编号 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:weightSum="4">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/orderDelivery_customsRecordNo"
+                        android:textColor="#606060"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_orderDelivery_customsRecordNo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="3"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                </LinearLayout>
+
+                <!-- 许可证号 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:weightSum="4">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/licenseNo"
+                        android:textColor="#606060"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_licenseNo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="3"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                </LinearLayout>
+
+
+                <!-- 申报地海关 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:weightSum="4">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/customsName1"
+                        android:textColor="#606060"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_customsName1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="3"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                </LinearLayout>
+
+
+                <!-- 进出口类型 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:weightSum="4">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/orderType"
+                        android:textColor="#606060"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_orderType"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="3"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                </LinearLayout>
+
+                <!-- 内销比率 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:weightSum="4">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/orderDelivery_domesticSaleRate"
+                        android:textColor="#606060"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_orderDelivery_domesticSaleRate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="3"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                </LinearLayout>
+
+                <!-- 征免性质 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:weightSum="4">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/orderDelivery_exemptionWayId"
+                        android:textColor="#606060"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_orderDelivery_exemptionWayId"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="3"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                </LinearLayout>
+
+                <!-- 整拼箱类型 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="5dp"
+                    android:weightSum="4">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/shippingOrderType"
+                        android:textColor="#606060"
+                        android:textSize="@dimen/textSize_12sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_shippingOrderType"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="3"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/textSize_12sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

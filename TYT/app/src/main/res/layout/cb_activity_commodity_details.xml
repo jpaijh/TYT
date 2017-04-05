@@ -1,0 +1,331 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f6f6">
+
+    <include layout="@layout/toolbar_title_left" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <View style="@style/CommodityListDetails_line1" />
+
+            <LinearLayout style="@style/CommodityListDetails_LinearLayout1">
+                <!-- 商品中文名称 -->
+                <LinearLayout style="@style/CommodityListDetails_LinearLayout2">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        style="@style/CommodityListDetails_AppcompatTextView1"
+                        android:text="@string/commodityNameCn" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_commodityNameCn"
+                        style="@style/CommodityListDetails_AppcompatTextView2" />
+
+                </LinearLayout>
+
+                <View style="@style/CommodityListDetails_line2" />
+
+                <!-- 商品英文名称 -->
+                <LinearLayout style="@style/CommodityListDetails_LinearLayout2">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        style="@style/CommodityListDetails_AppcompatTextView1"
+                        android:text="@string/commodityNameEn" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_commodityNameEn"
+                        style="@style/CommodityListDetails_AppcompatTextView2" />
+
+                </LinearLayout>
+
+                <View style="@style/CommodityListDetails_line2" />
+
+                <!-- HS编码 -->
+                <LinearLayout style="@style/CommodityListDetails_LinearLayout2">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        style="@style/CommodityListDetails_AppcompatTextView1"
+                        android:text="@string/hsCode" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_hsCode"
+                        style="@style/CommodityListDetails_AppcompatTextView2" />
+
+                </LinearLayout>
+
+                <View style="@style/CommodityListDetails_line2" />
+
+                <!-- 备案状态 -->
+                <LinearLayout
+                    style="@style/CommodityListDetails_LinearLayout2"
+                    android:paddingBottom="5dp">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        style="@style/CommodityListDetails_AppcompatTextView1"
+                        android:text="@string/commodityManagementGrid_statusView" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_commodityManagementGrid_statusView"
+                        style="@style/CommodityListDetails_AppcompatTextView2" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View style="@style/CommodityListDetails_line1" />
+
+            <View
+                style="@style/CommodityListDetails_line1"
+                android:layout_marginTop="10dp" />
+
+            <LinearLayout style="@style/CommodityListDetails_LinearLayout1">
+                <!-- 增税率 -->
+                <LinearLayout style="@style/CommodityListDetails_LinearLayout2">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        style="@style/CommodityListDetails_AppcompatTextView1"
+                        android:text="@string/vatRate" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_vatRate"
+                        style="@style/CommodityListDetails_AppcompatTextView2" />
+
+                </LinearLayout>
+
+                <View style="@style/CommodityListDetails_line2" />
+
+                <!-- 退税率 -->
+                <LinearLayout
+                    style="@style/CommodityListDetails_LinearLayout2"
+                    android:paddingBottom="5dp">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        style="@style/CommodityListDetails_AppcompatTextView1"
+                        android:text="@string/retRate" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_retRate"
+                        style="@style/CommodityListDetails_AppcompatTextView2" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View style="@style/CommodityListDetails_line1" />
+
+            <View
+                style="@style/CommodityListDetails_line1"
+                android:layout_marginTop="10dp" />
+
+            <LinearLayout style="@style/CommodityListDetails_LinearLayout1">
+
+                <!-- 规格型号 -->
+                <LinearLayout style="@style/CommodityListDetails_LinearLayout2">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        style="@style/CommodityListDetails_AppcompatTextView1"
+                        android:text="@string/commodityAttribute_specifications" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_commodityAttribute_specifications"
+                        style="@style/CommodityListDetails_AppcompatTextView2" />
+
+                </LinearLayout>
+
+                <View style="@style/CommodityListDetails_line2" />
+
+                <!-- 商品类别名称 -->
+                <LinearLayout style="@style/CommodityListDetails_LinearLayout2">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        style="@style/CommodityListDetails_AppcompatTextView1"
+                        android:text="@string/commodityAttribute_categoryName" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_commodityAttribute_categoryName"
+                        style="@style/CommodityListDetails_AppcompatTextView2" />
+
+                </LinearLayout>
+
+                <View style="@style/CommodityListDetails_line2" />
+
+                <!-- 商品类别编码 -->
+                <LinearLayout style="@style/CommodityListDetails_LinearLayout2">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        style="@style/CommodityListDetails_AppcompatTextView1"
+                        android:text="@string/commodityAttribute_categoryCode" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_commodityAttribute_categoryCode"
+                        style="@style/CommodityListDetails_AppcompatTextView2" />
+
+                </LinearLayout>
+
+                <View style="@style/CommodityListDetails_line2" />
+
+                <!-- 监管条件 -->
+                <LinearLayout style="@style/CommodityListDetails_LinearLayout2">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        style="@style/CommodityListDetails_AppcompatTextView1"
+                        android:text="@string/commodityAttribute_supervisionCondition" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_commodityAttribute_supervisionCondition"
+                        style="@style/CommodityListDetails_AppcompatTextView2" />
+
+                </LinearLayout>
+
+                <View style="@style/CommodityListDetails_line2" />
+
+                <!-- 海关备案编号 -->
+                <LinearLayout style="@style/CommodityListDetails_LinearLayout2">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        style="@style/CommodityListDetails_AppcompatTextView1"
+                        android:text="@string/customsRecordNo" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_customsRecordNo"
+                        style="@style/CommodityListDetails_AppcompatTextView2" />
+
+                </LinearLayout>
+
+                <View style="@style/CommodityListDetails_line2" />
+
+                <!-- 建议零售价 + 币别 -->
+                <LinearLayout
+                    style="@style/CommodityListDetails_LinearLayout2"
+                    android:paddingBottom="5dp">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        style="@style/CommodityListDetails_AppcompatTextView1"
+                        android:text="@string/commodityPrice_price" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_commodityPrice_price"
+                        style="@style/CommodityListDetails_AppcompatTextView2" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/CommodityListDetails_line1" />
+
+            <View
+                style="@style/CommodityListDetails_line1"
+                android:layout_marginTop="10dp" />
+
+            <LinearLayout style="@style/CommodityListDetails_LinearLayout1">
+                <!-- 计量单位 -->
+                <LinearLayout style="@style/CommodityListDetails_LinearLayout2">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        style="@style/CommodityListDetails_AppcompatTextView1"
+                        android:text="@string/unitDetail_cn" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_unitDetail_cn"
+                        style="@style/CommodityListDetails_AppcompatTextView2" />
+
+                </LinearLayout>
+
+                <View style="@style/CommodityListDetails_line2" />
+
+                <!-- 材质 -->
+                <LinearLayout style="@style/CommodityListDetails_LinearLayout2">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        style="@style/CommodityListDetails_AppcompatTextView1"
+                        android:text="@string/commodityAttribute_materialQuality" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_commodityAttribute_materialQuality"
+                        style="@style/CommodityListDetails_AppcompatTextView2" />
+
+                </LinearLayout>
+
+                <View style="@style/CommodityListDetails_line2" />
+
+                <!-- 品牌 -->
+                <LinearLayout style="@style/CommodityListDetails_LinearLayout2">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        style="@style/CommodityListDetails_AppcompatTextView1"
+                        android:text="@string/commodityAttribute_commodityBrand" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_commodityAttribute_commodityBrand"
+                        style="@style/CommodityListDetails_AppcompatTextView2" />
+
+                </LinearLayout>
+
+                <View style="@style/CommodityListDetails_line2" />
+
+                <!-- 产地 -->
+                <LinearLayout style="@style/CommodityListDetails_LinearLayout2">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        style="@style/CommodityListDetails_AppcompatTextView1"
+                        android:text="@string/commodityAttribute_placeOfOrigin" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_commodityAttribute_placeOfOrigin"
+                        style="@style/CommodityListDetails_AppcompatTextView2" />
+
+                </LinearLayout>
+
+                <View style="@style/CommodityListDetails_line2" />
+
+                <!-- 商品描述 -->
+                <LinearLayout style="@style/CommodityListDetails_LinearLayout2">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        style="@style/CommodityListDetails_AppcompatTextView1"
+                        android:text="@string/commodityAttribute_description" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_commodityAttribute_description"
+                        style="@style/CommodityListDetails_AppcompatTextView2" />
+
+                </LinearLayout>
+
+                <View style="@style/CommodityListDetails_line2" />
+
+                <!-- 是否发布到平台 -->
+                <LinearLayout
+                    style="@style/CommodityListDetails_LinearLayout2"
+                    android:layout_marginBottom="5dp">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        style="@style/CommodityListDetails_AppcompatTextView1"
+                        android:text="@string/commodityAttribute_isPublishToElecplt" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_commodityAttribute_isPublishToElecplt"
+                        style="@style/CommodityListDetails_AppcompatTextView2" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View style="@style/CommodityListDetails_line1" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <include layout="@layout/material_loading_progressbar" />
+
+</RelativeLayout>

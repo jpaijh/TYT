@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <com.qskj.tyt.view.pulllayout.PullToZoomLayout xmlns:pull="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/pull_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            pull:header="@layout/t_fragment_home_head_layout"
+            pull:maxHeaderHeight="370dp"
+            pull:minHeaderHeight="270dp">
+
+        </com.qskj.tyt.view.pulllayout.PullToZoomLayout>
+
+        <include layout="@layout/material_loading_progressbar" />
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_total_fund_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:singleLine="true"
+                android:text="0.00"
+                android:textColor="@drawable/selector_home_fund_text_color"
+                android:textSize="@dimen/textSize_34sp"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_text_total_fund_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fund_balance"
+                android:textColor="@color/text_color_white"
+                android:textSize="@dimen/textSize_12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_apply_payment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_home_btn_background"
+                android:clickable="true"
+                android:drawableTop="@mipmap/ic_home_pulllayout_tv_drawings"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/apply_payment"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_12sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_notice_foreign_exchange"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_home_btn_background"
+                android:clickable="true"
+                android:drawableTop="@mipmap/ic_home_pulllayout_tv_memo"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/notice_foreign_exchange"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_12sp" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <!--canLoop：控制是否自动循环-->
+    <com.bigkoo.convenientbanner.ConvenientBanner xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/convenientBanner"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/white"
+        android:visibility="gone"
+        app:canLoop="true" />
+
+    <com.qskj.tyt.view.dynamicgridview.DynamicGridView
+        android:id="@+id/gv_dynamic_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:numColumns="@integer/gridView_columns"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth" />
+
+</LinearLayout>

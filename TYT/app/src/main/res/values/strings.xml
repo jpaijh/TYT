@@ -1,0 +1,704 @@
+<resources>
+    <string name="app_name" translatable="false">天易通</string>
+
+    <!--Loading-->
+    <string name="platform_cross_border" translatable="false">跨境服务平台</string>
+    <string name="platform_trading" translatable="false">外贸服务平台</string>
+
+    <!-- Login -->
+    <string name="title_activity_login" translatable="false">登录</string>
+
+    <!-- 首页 -->
+    <string name="home" translatable="false">首页</string>
+    <string name="tools" translatable="false">工具</string>
+    <string name="mine" translatable="false">我的</string>
+
+    <!-- 消息中心 -->
+    <string name="typeName" translatable="false">类别</string>
+    <string name="title" translatable="false">标题</string>
+    <string name="content" translatable="false">内容</string>
+    <string name="sendDate" translatable="false">发送时间</string>
+    <string name="creatorName" translatable="false">发件人</string>
+
+    <!-- 工具界面 -->
+    <!--汇率查询 HS编码查询 申报要素 退税率查询 物流查询-->
+    <string name="tools_check_exchange_rate" translatable="false">汇率查询</string>
+    <string name="tools_check_hs_code" translatable="false">HS编码查询</string>
+    <string name="tools_declare_factor" translatable="false">申报要素</string>
+    <string name="tools_check_tax_refund_rate" translatable="false">退税率查询</string>
+    <string name="tools_check_logistics" translatable="false">物流查询</string>
+
+    <!-- 我的界面 -->
+    <string name="mine_about" translatable="false">关于</string>
+    <string name="mine_manualUpdate" translatable="false">检查更新</string>
+    <string name="mine_safe_setting" translatable="false">安全设置</string>
+    <string name="mine_title_change" translatable="false">抬头切换</string>
+    <string name="mine_clear_cache" translatable="false">缓存清理</string>
+
+    <!-- 我的界面-个人信息 -->
+    <string name="user_icon" translatable="false">头像</string>
+    <string name="login_name" translatable="false">登录名</string>
+    <string name="user_name" translatable="false">用户名</string>
+    <string name="mobilephone_number" translatable="false">手机号码</string>
+    <string name="mail" translatable="false">邮箱</string>
+    <string name="pltAccountName" translatable="false">账户名</string>
+    <string name="accountNature" translatable="false">角色</string>
+
+    <!-- 仓单管理 -->
+    <string name="storageListGrid_deliveryInvoiceCode" translatable="false">进仓编号</string>
+    <string name="storageListGrid_blNo" translatable="false">提单编号</string>
+    <string name="storageListGrid_businessEnterpriseName" translatable="false">经营单位</string>
+    <string name="storageListGrid_storageStatus" translatable="false">状态</string>
+    <string name="storageListGrid_deliveryDate" translatable="false">进仓单创建日期</string>
+    <string name="xinzhi" translatable="false">新制</string>
+    <string name="yiluru" translatable="false">已录入</string>
+    <string name="yiqueren" translatable="false">已确认</string>
+    <string name="daishouhuo" translatable="false">待收货</string>
+    <string name="yishouhuo" translatable="false">已收货</string>
+    <string name="yishenbao" translatable="false">已申报</string>
+    <string name="yibaoguan" translatable="false">已报关</string>
+    <!-- 仓单详情-货代-->
+    <string name="receiverName" translatable="false">TO</string>
+    <string name="deliveryInvoiceCode" translatable="false">进仓单号</string>
+    <string name="estimatedSchedual" translatable="false">预计船期</string>
+    <string name="startTimeOfDelivery" translatable="false">开始船期</string>
+    <string name="latestTimeOfDelivery" translatable="false">结束船期</string>
+    <string name="commodityDescCn" translatable="false">货名</string>
+    <string name="vol" translatable="false">体积</string>
+    <string name="volUnitEn" translatable="false">体积单位</string>
+    <string name="packingQuantity" translatable="false">件数</string>
+    <string name="packingUnitEn" translatable="false">件数单位</string>
+    <string name="grossWeight" translatable="false">托单毛重</string>
+    <string name="weightUnitEn" translatable="false">托单毛重单位</string>
+    <string name="destinationPortCn" translatable="false">目的港</string>
+    <string name="frontMark" translatable="false">唛头</string>
+    <string name="deliveryCarNo" translatable="false">车牌号</string>
+    <string name="deliveryCarDriverTelephone" translatable="false">司机电话</string>
+    <string name="declareEnterpriseName" translatable="false">报关行信息</string>
+    <string name="declareEnterpriseCode" translatable="false">十位代码</string>
+    <string name="warehouseRemark" translatable="false">仓库名称</string>
+    <string name="warehouseAddress" translatable="false">仓库地址</string>
+    <!-- 仓单详情-经营单位-基本信息 -->
+    <string name="warehouseingTime" translatable="false">进仓时间</string>
+    <string name="orderDelivery_businessEnterpriseCode" translatable="false">委托人代码</string>
+    <string name="orderDelivery_businessEnterpriseName" translatable="false">委托人名称</string>
+    <string name="orderDelivery_businessEnterpriseContactTelephone" translatable="false">委托人电话</string>
+    <string name="orderDelivery_businessEnterpriseAddress" translatable="false">委托人地址</string>
+    <string name="statusFormatCn_JYDM" translatable="false">状态</string>
+    <!-- 仓单详情-经营单位-报关信息 -->
+    <string name="orderDelivery_businessEnterpriseName1" translatable="false">经营单位</string>
+    <string name="orderDelivery_businessEnterpriseCode1" translatable="false">海关代码</string>
+    <string name="customsName" translatable="false">出口口岸</string>
+    <string name="customsName1" translatable="false">申报地海关</string>
+    <string name="blNo" translatable="false">提单编号</string>
+    <string name="orderType" translatable="false">进出口类型</string>
+    <string name="vesselName" translatable="false">船名</string>
+    <string name="voyageNo" translatable="false">航次</string>
+    <string name="actualCustomsClearanceDate" translatable="false">出口日期</string>
+    <string name="orderDelivery_declareDate" translatable="false">申报日期</string>
+    <string name="salesOrder" translatable="false">合同协议</string>
+    <string name="modeOfTransportationString" translatable="false">运输方式</string>
+    <string name="orderDelivery_customsRecordNo" translatable="false">备案编号</string>
+    <string name="licenseNo" translatable="false">许可证号</string>
+    <string name="orderDelivery_deliveryEnterpriseCode" translatable="false">发货单位代码</string>
+    <string name="orderDelivery_deliveryEnterpriseName" translatable="false">发货单位名称</string>
+    <string name="orderDelivery_declareEnterpriseCode" translatable="false">申报单位代码</string>
+    <string name="orderDelivery_declareEnterpriseName" translatable="false">申报单位名称</string>
+    <string name="modeOfTrade" translatable="false">贸易方式</string>
+    <string name="priceTerm" translatable="false">价格条款</string>
+    <string name="payment1" translatable="false">结汇方式</string>
+    <string name="ckCustomsClearanceNo" translatable="false">报关单号</string>
+    <string name="orderDelivery_domesticSaleRate" translatable="false">内销比率</string>
+    <string name="orderDelivery_exemptionWayId" translatable="false">征免性质</string>
+    <string name="finalDestCountryCn" translatable="false">目的国</string>
+    <string name="destinationPortCn1" translatable="false">目的港</string>
+    <string name="source" translatable="false">境内货源地</string>
+    <string name="shippingOrderType" translatable="false">整拼箱类型</string>
+    <string name="packingQuantity1" translatable="false">件数</string>
+    <string name="orderExportpackingUnitCn" translatable="false">商品名</string>
+    <string name="vol1" translatable="false">体积</string>
+    <string name="volUnitEn1" translatable="false">体积单位</string>
+    <string name="grossWeight1" translatable="false">毛重</string>
+    <string name="netWeight" translatable="false">净重</string>
+    <string name="weightUnitEn1" translatable="false">重量单位</string>
+    <string name="currency" translatable="false">币别</string>
+    <string name="amount" translatable="false">金额</string>
+    <string name="frontMark1" translatable="false">唛头</string>
+    <string name="freightChargeModeId" translatable="false">运费/率/币别</string>
+    <string name="premiumChargeModeId" translatable="false">保费/率/币别</string>
+    <string name="otherFeeChargeModeId" translatable="false">杂费/率/币别</string>
+    <string name="remark1" translatable="false">备注</string>
+    <!-- 仓单详情-经营单位-商品信息 -->
+    <string name="detailList_customsRecordNo" translatable="false">商品备案号</string>
+    <string name="detailList_hsCode1" translatable="false">商品HS码</string>
+    <string name="detailList_nameCn1" translatable="false">中文品名</string>
+    <string name="detailList_nameEn1" translatable="false">英文品名</string>
+    <string name="detailList_categoryCode" translatable="false">物品编码</string>
+    <string name="detailList_categoryName" translatable="false">物品类别</string>
+    <string name="detailList_customsSummary" translatable="false">申报要素</string>
+    <string name="detailList_supervisionCondition" translatable="false">监管条件</string>
+    <string name="detailList_tariffRate" translatable="false">出口关税</string>
+    <string name="detailList_brand" translatable="false">品牌</string>
+    <string name="detailList_material" translatable="false">材质</string>
+    <string name="detailList_placeOfOrigin" translatable="false">产地</string>
+    <string name="detailList_specification" translatable="false">规格型号</string>
+    <string name="detailList_jldwQuantity" translatable="false">第一法定数量</string>
+    <string name="detailList_jldwName" translatable="false">第一计量单位</string>
+    <string name="detailList_jldwSecondQuantity" translatable="false">第二法定数量</string>
+    <string name="detailList_JldwSecondName" translatable="false">第二计量单位</string>
+    <string name="detailList_packingAmount1" translatable="false">包装数量</string>
+    <string name="detailList_packingUnitCn" translatable="false">包装单位</string>
+    <string name="detailList_quantity1" translatable="false">工厂开票数量</string>
+    <string name="detailList_unitCn1" translatable="false">工厂开票单位</string>
+    <string name="detailList_grossWeight" translatable="false">毛重/KG</string>
+    <string name="detailList_vol1" translatable="false">体积/CBM</string>
+    <string name="detailList_currency" translatable="false">币别</string>
+    <string name="detailList_saleUnitPrice1" translatable="false">单价</string>
+    <string name="detailList_saleAmount1" translatable="false">总价</string>
+    <!-- 清单管理 -->
+    <string name="listmanage_deliveryInvoiceCode" translatable="false">进仓单编号</string>
+    <string name="listmanage_customsAreaEntryStatus" translatable="false">状态</string>
+    <string name="listmanage_enumber" translatable="false">出仓:</string>
+    <string name="listmanage_inventorynum" translatable="false">库存:</string>
+    <string name="listmanage_inwarehousenum" translatable="false">进仓:</string>
+    <string name="listmanage_forwarderConfirmed" translatable="false">确认状态</string>
+    <string name="listmanage_deliveryDate" translatable="false">创建日期</string>
+    <!-- 报关单管理-->
+    <string name="declaremanage_code" translatable="false">Code</string>
+    <string name="declaremanage_blNo" translatable="false">提单编号</string>
+    <string name="declaremanage_actualQuantity" translatable="false">实际出仓：</string>
+    <string name="declaremanage_packageQuantity" translatable="false">报关件数：</string>
+    <string name="declaremanage_destinationPort" translatable="false">终止港口</string>
+    <string name="declaremanage_exportPort" translatable="false">开始港口</string>
+    <string name="declaremanage_customsFlag" translatable="false">未报关/已报关</string>
+    <string name="declaremanage_createDate" translatable="false">创建日期</string>
+    <!-- 商品管理 -->
+    <!--中文品名 HS编码 状态 商品备案号-->
+    <string name="commodityManagementGrid_commodityNameCn" translatable="false">中文品名</string>
+    <string name="commodityManagementGrid_hsCode" translatable="false">HS编码</string>
+    <string name="commodityManagementGrid_statusView" translatable="false">备案状态</string>
+    <string name="commodityManagementGrid_customsRecordNo" translatable="false">商品备案号</string>
+    <!-- 商品详情 -->
+    <string name="commodityNameCn" translatable="false">商品中文名称</string>
+    <string name="commodityNameEn" translatable="false">商品英文名称</string>
+    <string name="hsCode" translatable="false">HS编码</string>
+    <string name="commodityAttribute_specifications" translatable="false">规格型号</string>
+    <string name="vatRate" translatable="false">增税率</string>
+    <string name="retRate" translatable="false">退税率</string>
+    <string name="commodityAttribute_categoryName" translatable="false">商品类别名称</string>
+    <string name="commodityAttribute_categoryCode" translatable="false">商品类别编码</string>
+    <string name="commodityAttribute_supervisionCondition" translatable="false">监管条件</string>
+    <string name="customsRecordNo" translatable="false">海关备案编号</string>
+    <string name="commodityPrice_price" translatable="false">建议零售价</string>
+    <string name="commodityPrice_priceCurrency" translatable="false">币别</string>
+    <string name="unitDetail_cn" translatable="false">计量单位</string>
+    <string name="commodityAttribute_materialQuality" translatable="false">材质</string>
+    <string name="commodityAttribute_commodityBrand" translatable="false">品牌</string>
+    <string name="commodityAttribute_placeOfOrigin" translatable="false">产地</string>
+    <string name="commodityAttribute_description" translatable="false">商品描述</string>
+    <string name="imageList" translatable="false">商品图片</string>
+    <string name="attachmentList" translatable="false">商品说明书</string>
+    <string name="commodityAttribute_isPublishToElecplt" translatable="false">是否发布到平台</string>
+
+    <!-- ActionBar Title -->
+    <string name="title_activity_warehousingmanage" translatable="false">进仓管理</string>
+    <string name="title_activity_commodutymanage" translatable="false">商品管理</string>
+    <string name="title_activity_listmanage" translatable="false">清单管理</string>
+    <string name="title_activity_declaremanage" translatable="false">报关单管理</string>
+    <string name="title_activity_stockmanage" translatable="false">入库管理</string>
+    <string name="title_activity_message_center" translatable="false">消息中心</string>
+    <string name="title_activity_user_info" translatable="false">个人信息</string>
+    <string name="title_activity_about" translatable="false">关于我们</string>
+    <string name="title_activity_select_picture" translatable="false">选择图片</string>
+    <string name="title_activity_modify_password" translatable="false">安全设置-密码修改</string>
+    <string name="title_activity_commoditymanage_list" translatable="false">商品备案列表</string>
+    <string name="title_activity_search" translatable="false">搜索</string>
+    <string name="title_activity_orderform_search" translatable="false">订单搜索</string>
+    <string name="title_activity_account_search" translatable="false">账户搜索</string>
+
+    <!-- 其他 -->
+    <string name="check_details" translatable="false">查看详情</string>
+    <!-- Menu -->
+    <string name="action_settings" translatable="false">更多</string>
+    <!-- SnackBar -->
+    <string name="isLoading" translatable="false">正在加载...</string>
+    <string name="isRefresh" translatable="false">正在刷新...</string>
+    <string name="loading_complete" translatable="false">加载完成...</string>
+    <string name="noDate" translatable="false">已经没有数据了...</string>
+
+    <!-- 外贸平台 -->
+    <string name="fund_balance" translatable="false">资金余额（元）</string>
+    <string name="apply_payment" translatable="false">申请提款</string>
+    <string name="notice_foreign_exchange" translatable="false">通知收汇</string>
+    <string name="orderform" translatable="false">订单</string>
+    <string name="title_activity_orderform_details" translatable="false">订单详情</string>
+
+    <!-- 我的订单 -->
+    <!--外销发票号 订单金额  外商名称 状态 创建时间 订单流水号-->
+    <!--服务项目 客户PO号 船期 截关日期 货代名称 品名-->
+    <string name="salesorder" translatable="false">外销发票号</string>
+    <string name="orderform_amount" translatable="false">订单金额</string>
+    <string name="orderform_foreignName" translatable="false">外商名称</string>
+    <string name="statusFormatCn" translatable="false">状态</string>
+    <string name="orderform_createDate" translatable="false">创建时间</string>
+    <string name="orderform_code" translatable="false">订单流水号</string>
+    <string name="orderItemName" translatable="false">服务项目</string>
+    <string name="customerPurchaseOrder" translatable="false">客户PO号</string>
+
+    <!-- 订单详情页 -->
+    <string name="order_details_general_trade" translatable="false">一般贸易出口通关</string>
+    <string name="order_details_export_rebates" translatable="false">出口退税服务</string>
+    <string name="order_details_credit_financing" translatable="false">赊销融资</string>
+    <string name="order_details_goods_generation_tank" translatable="false">货代订舱</string>
+    <!--通关-->
+    <string name="orderExport_invoicingCompanyName" translatable="false">开票公司</string>
+    <string name="consignor" translatable="false">发货人</string>
+    <string name="consignee" translatable="false">收货人</string>
+    <string name="orderExport_foreignName" translatable="false">外币付款人</string>
+    <string name="notifier" translatable="false">通知人</string>
+    <!-- 报关基本信息-->
+    <string name="orderExport_ckCustomsClearanceNo" translatable="false">报关单号</string>
+    <string name="orderExport_salesOrder" translatable="false">外销发票号</string>
+    <string name="orderExport_finalDestCountry" translatable="false">贸易国别</string>
+    <string name="orderExport_priceTerm" translatable="false">价格条款</string>
+    <string name="orderExport_currency" translatable="false">币别</string>
+    <string name="orderExport_amount" translatable="false">报关金额</string>
+    <string name="orderExport_payment1Desc" translatable="false">收汇方式1</string>
+    <string name="orderExport_payment2Desc" translatable="false">收汇方式2</string>
+    <string name="orderExport_modeOfTrade" translatable="false">贸易性质</string>
+    <string name="orderExport_source" translatable="false">境内货源地</string>
+    <string name="orderExport_completeDeliveryDate" translatable="false">完货日期</string>
+    <string name="orderExport_invoiceAmount" translatable="false">开票总金额</string>
+    <string name="order_remark" translatable="false">订单备注</string>
+    <!-- 物流信息 -->
+    <string name="orderExport_modeOfTransportation" translatable="false">运输方式</string>
+    <string name="orderExport_exportPortEn" translatable="false">出口口岸</string>
+    <string name="orderExport_transshippmentPortEn" translatable="false">中转口岸</string>
+    <string name="orderExport_destinationPortEn" translatable="false">目的口岸</string>
+    <string name="orderExport_shippmentDate" translatable="false">装运期限</string>
+    <string name="orderExport_shippingSchedule" translatable="false">船期</string>
+    <string name="orderExport_closingDate" translatable="false">截关日期</string>
+    <string name="orderExport_grossWeight" translatable="false">总毛重</string>
+    <string name="orderExport_netWeight" translatable="false">总净重</string>
+    <string name="orderExport_vol" translatable="false">总体积</string>
+    <string name="orderExport_frontMark" translatable="false">正唛</string>
+    <string name="orderExport_sideMark" translatable="false">侧唛</string>
+    <string name="orderExport_forwarder" translatable="false">货代名称</string>
+    <string name="orderExport_forwardingContactor" translatable="false">货代联系人</string>
+    <string name="orderExport_forwardingPhone" translatable="false">货代电话</string>
+    <!-- 一般出口：货柜信息 order.forwardingContainer -->
+    <!--柜型 	数量 	说明 	柜号 	车号 	白卡号 	司机 	联系方式-->
+    <string name="container_typeName" translatable="false">柜型</string>
+    <string name="container_count" translatable="false">数量</string>
+    <string name="container_remark" translatable="false">说明</string>
+    <string name="container_sealNo" translatable="false">柜号</string>
+    <string name="container_carNo" translatable="false">车号</string>
+    <string name="container_whiteCardNo" translatable="false">白卡号</string>
+    <string name="container_driverName" translatable="false">司机</string>
+    <string name="container_driverPhone" translatable="false">联系方式</string>
+
+    <!--货代订舱：货柜信息：order.forwardingContainer-->
+    <!--箱号 	封号 	柜型 	数量 	说明-->
+    <!--<td data-bind="text:containerNo" > </td>-->
+    <!--<td data-bind="text:sealNo" > </td>-->
+    <!--<td data-bind="text:typeName"></td>-->
+    <!--<td data-bind="text:count" > </td>-->
+    <!--<td data-bind="text:remark"> </td>-->
+
+    <!-- 商品信息 -->
+    <!-- 合并前 detailList 合并后 combineDetailList-->
+    <!--海关编码 	中文品名 	英文品名 	数量 	单位 	单价 	总价 	包装件数 	包装单位 	净重(KG) 	毛重(KG) 	体积(CBM)-->
+    <!--中文品名 	包装件数 	包装单位 	毛重(KG) 	体积(CBM) 	净重(KG)-->
+    <string name="detailList_hsCode" translatable="false">海关编码</string>
+    <string name="detailList_nameCn" translatable="false">中文品名</string>
+    <string name="detailList_nameEn" translatable="false">英文品名</string>
+    <string name="detailList_quantity" translatable="false">数量</string>
+    <string name="detailList_unitCn" translatable="false">单位</string>
+    <string name="detailList_saleUnitPrice" translatable="false">单价</string>
+    <string name="detailList_saleAmount" translatable="false">总价</string>
+    <string name="detailList_packingAmount" translatable="false">包装件数</string>
+    <string name="detailList_packingUnitInfo" translatable="false">包装单位</string>
+    <string name="detailList_unitNWeight" translatable="false">净重(KG)</string>
+    <string name="detailList_unitGWeight" translatable="false">毛重(KG)</string>
+    <string name="detailList_vol" translatable="false">体积(CBM)</string>
+
+    <!-- 出口退税服务-->
+    <string name="orderExport_tsIsPaymentCost" translatable="false">是否已支付相关费用(海运费、保险费等)</string>
+    <string name="orderExport_actualCustomsClearanceDate" translatable="false">报关日期</string>
+    <string name="orderExport_tsMustActualAmount" translatable="false">应退税金额</string>
+    <string name="orderExport_tsFormalitiesCharges" translatable="false">手续费</string>
+    <string name="orderExport_tsCustomRebateAmount" translatable="false">客户退税额</string>
+    <string name="orderExport_tsRebateDeadline" translatable="false">最晚退税日</string>
+    <string name="orderExport_tsPaymentAmount" translatable="false">已放款金额</string>
+    <string name="orderExport_tsActualDate" translatable="false">实际退税日</string>
+    <string name="orderExport_tsActualAmount" translatable="false">实际退税额</string>
+
+    <!-- 赊销融资服务-->
+    <!--基本信息-->
+    <!--用户名称： 	湖北仟姿蒂妮皮草服饰有限公司 	用户编码： 	L002-->
+    <!--信用额度： 	0.00 	报关币别： 	USD-->
+    <!--报关金额： 	97.00-->
+    <string name="order_accountName" translatable="false">用户名称</string>
+    <string name="order_accountCode" translatable="false">用户编码</string>
+    <string name="orderExport_sxCustomCreditLimit" translatable="false">信用额度</string>
+    <string name="orderExport_currency1" translatable="false">报关币别</string>
+    <string name="orderExport_amount1" translatable="false">报关金额</string>
+    <!--投保信息-->
+    <!--外商： 	湖北仟姿蒂妮皮草服饰有限公司 	信报编码： 	L002	中信保剩余额度： 	0.00 	付款方式： 	110-->
+    <!--投保币别： 	USD 	投保金额： 	97.00	信保汇率： 	6.2 	出运日期：-->
+    <!--账期(天)： 		是否电话确认：-->
+    <string name="order_accountName1" translatable="false">外商</string>
+    <string name="order_accountCode1" translatable="false">信报编码</string>
+    <string name="orderExport_sxCustomCreditLimit1" translatable="false">中信保剩余额度</string>
+    <string name="orderExport_sxPaymentType" translatable="false">付款方式</string>
+    <string name="orderExport_sxSinosureCurrency" translatable="false">投保币别</string>
+    <string name="orderExport_sxSinosureAmount" translatable="false">投保金额</string>
+    <string name="orderExport_sxSinosureRate" translatable="false">信保汇率</string>
+    <string name="orderExport_sxShipmentDate" translatable="false">出运日期</string>
+    <string name="orderExport_sxFinacingDays" translatable="false">账期(天)</string>
+    <string name="orderExport_sxIsCustomsConfirm" translatable="false">是否电话确认</string>
+
+    <!--收款方信息-->
+    <!-- TODO 不知道怎么获取 -->
+    <!--货款使用人 	收款银行 	收款账号 	融资金额-->
+    <!--<string name="orderExport_sxIsCustomsConfirm">货款使用人</string>-->
+    <!--<string name="orderExport_sxIsCustomsConfirm">收款银行</string>-->
+    <!--<string name="orderExport_sxIsCustomsConfirm">收款账号</string>-->
+    <!--<string name="orderExport_sxIsCustomsConfirm">融资金额</string>-->
+
+    <!--融资信息-->
+    <!--融资金额(包含利息和保费等)： 		融资放款金额：-->
+    <!--拟定汇率： 		融资比例： 		是否和业务员确认： 		预订利息：-->
+    <!--保费率： 		保费电汇费： 		保费(包括电汇费)：-->
+    <!--还款日： 		逾期宽限日：-->
+    <string name="orderExport_sxFinancionCreditLimit" translatable="false">融资金额(包含利息和保费等)</string>
+    <string name="financeLoanAmount" translatable="false">融资放款金额</string>
+    <string name="orderExport_sxReservationRate" translatable="false">拟定汇率</string>
+    <string name="orderExport_sxFinancingProportion" translatable="false">融资比例</string>
+    <string name="orderExport_sxOperatorConfirmFlag" translatable="false">是否和业务员确认</string>
+    <string name="orderExport_sxReservationInterest" translatable="false">预订利息</string>
+    <string name="orderExport_sxSinosureCostRate" translatable="false">保费率</string>
+    <string name="orderExport_sxSinosureTtCost" translatable="false">保费电汇费</string>
+    <string name="orderExport_sxSinosureCost" translatable="false">保费(包括电汇费)</string>
+    <string name="orderExport_sxPaymentDate" translatable="false">还款日</string>
+    <string name="orderExport_sxEndDate" translatable="false">逾期宽限日</string>
+    <!--还款信息-->
+    <!--放款日期： 		出运日期： 		融资金额： 		最终实际利息：-->
+    <!--实际还款额： 		已付利息X： 		未还款额： 		利息差额：-->
+    <!--还款日期 	金额 	实际账期(天) 	备注-->
+    <string name="orderExport_sxActualFkDate" translatable="false">放款日期</string>
+    <string name="orderExport_sxShipmentDate1" translatable="false">出运日期</string>
+    <string name="orderExport_sxFinancionCreditLimit1" translatable="false">融资金额</string>
+    <string name="orderExport_sxActualInterest" translatable="false">最终实际利息</string>
+    <string name="orderExport_sxActualPaymentAmount" translatable="false">实际还款额</string>
+    <string name="orderExport_sxSinosureTtCost1" translatable="false">已付利息</string>
+    <string name="orderExport_sxUnPaymentAmount" translatable="false">未还款额</string>
+    <string name="orderExport_sxDifferenceAmount" translatable="false">利息差额</string>
+
+    <!-- TODO 还款信息还有这4个字段不知道怎么获取 -->
+    <!--<string name="orderExport_sxEndDate">还款日期</string>-->
+    <!--<string name="orderExport_sxEndDate">金额</string>-->
+    <!--<string name="orderExport_sxEndDate">实际账期(天)</string>-->
+    <!--<string name="orderExport_sxEndDate">备注</string>-->
+
+    <!-- 货代订舱 -->
+    <!--相关方信息-->
+    <!--发货人：收货人：通知人：-->
+    <string name="hd_consignor" translatable="false">发货人</string>
+    <string name="hd_consignee" translatable="false">收货人</string>
+    <string name="hd_notifier" translatable="false">通知人</string>
+    <!--物流信息-->
+    <!--起运港： 		中转港： 		目的港： 		开航日期：-->
+    <!--贸易性质： 		运费条款： 		可否转运： 		货柜类型：-->
+    <!--收汇方式： 		船司：-->
+    <!--提单号： 		船名： 		船次：-->
+    <!--货代名称： 		联系人： 		联系电话：-->
+    <!--货代地址： 		货代邮箱： 		货代传真：-->
+    <!--标记唛头： 		备注：-->
+    <string name="orderExport_exportPortEn1" translatable="false">起运港</string>
+    <string name="orderExport_transshippmentPortEn1" translatable="false">中转港</string>
+    <string name="orderExport_destinationPortEn1" translatable="false">目的港</string>
+    <string name="orderExport_etd" translatable="false">开航日期</string>
+    <string name="orderExport_modeOfTrade1" translatable="false">贸易性质</string>
+    <string name="orderExport_freightTerms" translatable="false">运费条款</string>
+    <string name="orderExport_isTransport" translatable="false">可否转运</string>
+    <string name="orderExport_shippingOrderType" translatable="false">货柜类型</string>
+    <string name="orderExport_payment1Desc1" translatable="false">收汇方式</string>
+    <string name="orderExport_carrierNameEn" translatable="false">船司</string>
+    <string name="orderExport_blNo" translatable="false">提单号</string>
+    <string name="orderExport_vesselName" translatable="false">船名</string>
+    <string name="orderExport_voyageNo" translatable="false">船次</string>
+    <string name="orderExport_forwarder1" translatable="false">货代名称</string>
+    <string name="orderExport_forwardingContactor1" translatable="false">联系人</string>
+    <string name="orderExport_forwardingPhone1" translatable="false">联系电话</string>
+    <string name="orderExport_forwardingAddress" translatable="false">货代地址</string>
+    <string name="orderExport_forwardingEmail" translatable="false">货代邮箱</string>
+    <string name="orderExport_forwardingFax" translatable="false">货代传真</string>
+    <string name="orderExport_frontMark1" translatable="false">标记唛头</string>
+    <string name="orderExport_forwardingRemark" translatable="false">备注</string>
+    <!-- 货代订舱 商品信息：orderExport.shippingDetailList-->
+    <!--中文品名 	包装件数 	包装单位 	毛重(KG) 	体积(CBM) 	净重(KG)-->
+    <string name="shippingDetailList_nameCn" translatable="false">中文品名</string>
+    <string name="shippingDetailList_quantity" translatable="false">包装件数</string>
+    <string name="shippingDetailList_packingUnitEn" translatable="false">包装单位</string>
+    <string name="shippingDetailList_grossWeight" translatable="false">毛重(KG)</string>
+    <string name="shippingDetailList_vol" translatable="false">体积(CBM)</string>
+    <string name="shippingDetailList_netWeight" translatable="false">净重(KG)</string>
+
+    <!--提货工厂信息：order.orderExport.pickupGoodsFactoryList-->
+    <!--工厂名称 	工厂地址 	联系人 	联系方式-->
+    <!--<td data-bind="text:factoryName" > </td>-->
+    <!--<td data-bind="text:factoryAddress" > </td>-->
+    <!--<td data-bind="text:factoryContact"></td>-->
+    <!--<td data-bind="text:factoryContactWay" > </td>-->
+
+
+    <!--常用信息：字段很多都找不到，先不展示到界面上-->
+    <!--费用名称 	往来单位名称 	费用数量 	费用单价 	费用币别 	费用总金额 	折RMB汇率 	折RMB金额 	应收应付-->
+    <!--<td data-bind="text:feeName" > </td>-->
+    <!--<td data-bind="text:relatedCompany" > </td>-->
+    <!--<td data-bind="currency:feeCount" > </td>-->
+    <!--<td data-bind="currency:price" > </td>-->
+    <!--<td data-bind="text:currency" > </td>-->
+    <!--<td data-bind="currency:feeAmount" > </td>-->
+    <!--<td data-bind="currency:rmbRate" > </td>-->
+    <!--<td data-bind="currency:rmbFeeAmount" > </td>-->
+    <!--<td data-bind="enumer:type,type:'feeType'" > </td>-->
+
+    <!-- 附件：attachmentName -->
+
+
+    <string name="title_activity_customer_service" translatable="false">专属客服</string>
+    <string name="title_activity_contacts_company" translatable="false">往来单位</string>
+
+    <string name="title_activity_my_fund" translatable="false">我的资金</string>
+    <string name="title_activity_invoice_notice_details" translatable="false">详情信息</string>
+    <string name="title_activity_notice_foreign_exchange" translatable="false">通知收汇</string>
+    <string name="title_activity_my_invoice" translatable="false">我的票据</string>
+    <string name="title_activity_invoice_information_products" translatable="false">商品详情</string>
+    <string name="title_activity_apply_payment" translatable="false">申请提款</string>
+    <string name="title_activity_warning_center" translatable="false">预警中心</string>
+    <string name="title_activity_ApplyPaymentDetailsActivity" translatable="false">提款详情</string>
+    <string name="title_activity_title_change_Activity" translatable="false">抬头切换</string>
+
+    <!-- 我的往来单位 界面-->
+    <string name="nameCn" translatable="false">名称</string>
+    <string name="inland_status" translatable="false">状态</string>
+    <string name="contactPerson" translatable="false">联系人</string>
+    <string name="contactWay" translatable="false">联系方式</string>
+    <string name="addressCn" translatable="false">地址</string>
+    <string name="legalRepresentative" translatable="false">法人</string>
+    <string name="registeredAddress" translatable="false">注册地址</string>
+    <string name="registeredCaption" translatable="false">注册资金</string>
+    <string name="creditInformation" translatable="false">资信调查信息</string>
+    <string name="remark" translatable="false">备注</string>
+    <!-- 我的往来界面-我的外商-->
+    <string name="country" translatable="false">国家或地区</string>
+
+    <!-- 状态 Status-->
+    <!--审批状态 新制 = 0 审批汇总=1，未申请审批=-1，审批同意=2，审批不同意=-2，已支付=3，已入账=4，待受理= -10 已退回=-11，结算撤回=-12 -->
+    <string name="brand_new" translatable="false">新制</string>
+    <string name="approve_collect" translatable="false">审批中</string>
+    <string name="no_applly_approve" translatable="false">未申请审批</string>
+    <string name="pass_approve" translatable="false">审批通过</string>
+    <string name="nopass_approve" translatable="false">审批不通过</string>
+    <string name="prepaid" translatable="false">已支付</string>
+    <string name="postinged" translatable="false">已入账</string>
+    <string name="wait_accepted" translatable="false">待受理</string>
+    <string name="returned" translatable="false">已退回</string>
+    <string name="settle_revoke" translatable="false">结算撤回</string>
+
+    <!-- 我的票据 界面-->
+    <!-- 开票通知 界面-->
+    <string name="invoice_notice_orderCode" translatable="false">通知单号</string>
+    <string name="invoice_notice" translatable="false">开票通知</string>
+    <string name="code" translatable="false">外销发票号</string>
+    <string name="account_name" translatable="false">开票单位名称</string>
+    <!--<string name="amount" translatable="false">开票总金额</string>-->
+    <string name="adviceDate" translatable="false">通知时间</string>
+    <string name="invoice_notice_remark" translatable="false">备注</string>
+    <string name="status" translatable="false">状态</string>
+
+    <!-- 开票通知-详情页-->
+    <string name="notice_details" translatable="false">通知详情</string>
+    <string name="products_details" translatable="false">商品详情</string>
+
+    <string name="invoice_information" translatable="false">发票信息</string>
+    <string name="details_ordercode" translatable="false">通知单号：</string>
+    <string name="details_code" translatable="false">外销发票号</string>
+    <string name="details_adviceDate" translatable="false">通知时间</string>
+    <string name="details_draweeName" translatable="false">收款单位</string>
+    <string name="details_titleName" translatable="false">付款单位</string>
+    <string name="details_amount" translatable="false">总金额</string>
+    <string name="details_address" translatable="false">寄单地址</string>
+    <string name="details_remark" translatable="false">备注</string>
+
+    <string name="taitou_message" translatable="false">抬头信息：</string>
+    <string name="titleName" translatable="false">名称</string>
+    <string name="taxCode" translatable="false">税号</string>
+    <string name="address" translatable="false">地址</string>
+    <string name="phone" translatable="false">电话</string>
+    <string name="bank" translatable="false">开户行</string>
+    <string name="bankAccount" translatable="false">账号</string>
+
+    <string name="orderCommodityName" translatable="false">品名：</string>
+    <string name="specification" translatable="false">规格型号</string>
+    <string name="orderCommodityUnit" translatable="false">单位</string>
+    <string name="orderCommodityQuantity" translatable="false">数量</string>
+    <string name="orderCommodityPriceWov" translatable="false">单价</string>
+    <string name="orderCommodityAmountWov" translatable="false">不含税金额</string>
+    <string name="orderCommodityRebateRate" translatable="false">税率</string>
+    <string name="orderCommodityVatAmount" translatable="false">税额</string>
+
+    <!-- 发票信息 -->
+    <string name="invoice_code" translatable="false">发票号</string>
+    <string name="createDate" translatable="false">开票日期</string>
+    <string name="invoice_amount" translatable="false">开票金额</string>
+    <string name="type" translatable="false">发票类型</string>
+    <!--货款发票 = 0,费用发票 = 1-->
+    <string name="payment_invoice" translatable="false">货款发票</string>
+    <string name="expense_invoice" translatable="false">费用发票</string>
+    <string name="confirmDate" translatable="false">增票确认日期</string>
+    <string name="saleOrder" translatable="false">外销发票号</string>
+    <string name="orderCode" translatable="false">订单流水号</string>
+    <string name="invoice_status" translatable="false">增票状态</string>
+    <string name="accountName" translatable="false">开票单位</string>
+    <string name="draweerName" translatable="false">开票单位名称</string>
+
+    <!--跟单员拒绝处理 退回 = -1,-->
+    <string name="send_back" translatable="false">退回</string>
+    <!--跟单员点击接收 已受理 = 3,-->
+    <string name="accepted" translatable="false">已受理</string>
+    <!-- 已受理 = 3-->
+    <string name="invoice_accepted" translatable="false">已接受</string>
+    <!--如果是来源于后台，点击提交为 审批中 = 4,-->
+    <string name="commit" translatable="false">提交</string>
+    <string name="take_effect" translatable="false">生效</string>
+    <string name="verified" translatable="false">已认证</string>
+    <string name="wait_approve" translatable="false">待批</string>
+    <string name="approveing" translatable="false">审批中</string>
+    <!--领导审批通过 审核通过 = 5,未通过审核 = 6,-->
+    <string name="pass_audit" translatable="false">审核通过</string>
+    <string name="nopass_audit" translatable="false">未通过审核</string>
+
+    <!-- 资金页面-->
+    <string name="general_account" translatable="false">普通账户</string>
+    <string name="general_account_with_colon" translatable="false">普通账户:</string>
+    <string name="financing_account" translatable="false">融资账户</string>
+    <string name="financing_account_with_colon" translatable="false">融资账户:</string>
+    <!-- 账户资金条目-->
+    <string name="earning_or_expenditure" translatable="false">收入/支出</string>
+    <!-- 账户资金详情页面 -->
+    <string name="title_activity_account_fund_details" translatable="false">收支详情</string>
+    <string name="money" translatable="false">----</string>
+    <string name="date" translatable="false">时间</string>
+    <string name="project" translatable="false">项目</string>
+    <string name="export_invoice_number" translatable="false">外销发票号</string>
+    <string name="original_currency_amount" translatable="false">原币金额</string>
+    <string name="exchange_rate" translatable="false">汇率</string>
+    <string name="earning" translatable="false">收入(RMB)</string>
+    <string name="expenditure" translatable="false">支出(RMB)</string>
+    <string name="balance" translatable="false">余额</string>
+    <string name="between_parties" translatable="false">往来方</string>
+
+    <!-- 申请提款列表-->
+    <string name="apply_code" translatable="false">提款单号</string>
+    <string name="saleOrders" translatable="false">外销发票号</string>
+    <string name="actualPaymentAmount" translatable="false">支付金额</string>
+    <string name="applyPaymentAmount" translatable="false">结算金额</string>
+    <string name="apply_status" translatable="false">状态</string>
+    <string name="applyDate" translatable="false">声请日期</string>
+    <!-- 申请提款列表详情-->
+    <string name="applypayment_code" translatable="false">提款单号</string>
+    <!--来源：source 1 客户自助申请2 后台代客提款-->
+    <string name="applypayment_source" translatable="false">来源</string>
+    <string name="applypayment_statusName" translatable="false">申请状态</string>
+    <string name="applypayment_accountName" translatable="false">账户名称</string>
+    <string name="applypayment_costName" translatable="false">提款类型</string>
+    <string name="applypayment_costName1" translatable="false">费用类型</string>
+    <string name="applypayment_companyName" translatable="false">收款单位</string>
+    <string name="applypayment_bank" translatable="false">收款银行</string>
+    <string name="applypayment_bankAccount" translatable="false">银行账户</string>
+    <string name="applypayment_titleName" translatable="false">提款抬头</string>
+    <string name="applypayment_currency" translatable="false">币别</string>
+    <string name="applypayment_rmbRate" translatable="false">折人民币汇率</string>
+    <string name="applypayment_remittanceFee" translatable="false">汇款费用</string>
+    <string name="applypayment_actualPaymentAmount" translatable="false">支付金额</string>
+    <string name="applypayment_applyPaymentAmount" translatable="false">结算金额</string>
+    <string name="applypayment_payMethodName" translatable="false">支付方式</string>
+    <string name="applypayment_remark" translatable="false">备注</string>
+    <!-- 这两个字段从 /api/Funds/PaymentApply/FindPaymentApply 获取-->
+    <string name="draweeBankName" translatable="false">提款银行</string>
+    <string name="draweeBankAccount" translatable="false">提款账户</string>
+    <!--<string name="取fileName字段，获取到之后，拼接一个URL，然后就打开一个网页去查看文件">相关附件(未上传)</string>-->
+
+    <!--申请提款列表详情订单拆分-->
+    <!--外销发票号 	增票金额 	已提金额 	未提金额 	结算金额 	提款是否完成-->
+    <!--WHXMZ002 322,051.28 320,552.41 	1,498.87 	99630.64 	否-->
+    <string name="split_orderCode" translatable="false">外销发票号</string>
+    <string name="split_zpAmount" translatable="false">增票金额</string>
+    <string name="split_slipedAmount" translatable="false">已提金额</string>
+    <string name="split_amount" translatable="false">未提金额</string>
+    <string name="split_actualAmount" translatable="false">结算金额</string>
+    <string name="split_slipCompleted" translatable="false">提款是否完成</string>
+
+    <!--提款申请操作界面-->
+    <string name="title_activity_payment" translatable="false">提款申请</string>
+
+    <!-- 通知收汇/ 水单通知 详情 -->
+    <string name="notice_foreign_exchang_amount" translatable="false">金额</string>
+    <string name="foreignName" translatable="false">外商</string>
+    <string name="notice_foreign_exchang_createDate" translatable="false">制作日期</string>
+    <string name="receiptDate" translatable="false">付汇日期</string>
+    <string name="receiptBank" translatable="false">付汇银行</string>
+    <string name="notice_foreign_exchang_status" translatable="false">状态</string>
+
+    <!-- 预警中心 -->
+    <!-- 外销发票号 外商名称 总金额 报关时间 开票截止日期 订单流水号 PO号 创建时间-->
+    <string name="invoice_warning" translatable="false">开票</string>
+    <string name="warning_export_invoice_number" translatable="false">外销发票号</string>
+    <string name="warning_foreign_businessman" translatable="false">外商名称</string>
+    <string name="warning_invoice_unit" translatable="false">开票单位</string>
+    <string name="warning_amount" translatable="false">金额</string>
+    <string name="warning_invoice_date" translatable="false">发票日期</string>
+    <string name="warning_declare_date" translatable="false">报关日期</string>
+    <string name="warning_approve_expiration_date" translatable="false">认证截止日期</string>
+    <string name="warning_order_serial_number" translatable="false">订单流水号</string>
+    <string name="warning_po_number" translatable="false">PO号</string>
+    <string name="warning_create_date" translatable="false">创建时间</string>
+    <!-- 增票号 外销发票号 开票单位 金额 发票日期 报关日期 认证截止日期 订单流水号 PO号 创建时间	 -->
+    <string name="invoice_approve_warning" translatable="false">增票认证</string>
+    <string name="warning_invoice_number" translatable="false">增票号</string>
+
+    <!-- 类型 外销发票号 信用证号码 金额 开证日期 有效期 最晚装运期 装运状态 交单期 交单状态 形式发票号码 审证内容及注意事项-->
+    <string name="credit_card_validity_warning" translatable="false">信用证有效期</string>
+    <string name="warning_type" translatable="false">类型</string>
+    <string name="warning_credit_card_number" translatable="false">信用证号码</string>
+    <string name="warning_issuing_date" translatable="false">开证日期</string>
+    <string name="warning_validity" translatable="false">有效期</string>
+    <string name="warning_at_latest_shipping" translatable="false">最晚装运期</string>
+    <string name="warning_shipping_status" translatable="false">装运状态</string>
+    <string name="warning_surrender_document_date" translatable="false">交单期</string>
+    <string name="warning_surrender_document_status" translatable="false">交单状态</string>
+    <string name="warning_form_invoice_number" translatable="false">形式发票号码</string>
+    <string name="warning_check_content_and_notes" translatable="false">审证内容及注意事项</string>
+    <!-- 类型 外销发票号 信用证号码 金额 开证日期 有效期 最晚装运期 装运状态 交单期 交单状态 形式发票号码 审证内容及注意事项-->
+    <string name="credit_card_at_latest_shipping_warning" translatable="false">信用证最晚装运期</string>
+    <!-- 类型 外销发票号 信用证号码 金额 开证日期 有效期 最晚装运期 装运状态 交单期 交单状态 形式发票号码 审证内容及注意事项 -->
+    <string name="credit_card_surrender_document_warning" translatable="false">信用证交单期</string>
+
+    <!-- 搜索界面 -->
+    <string name="search_sale_invoice" translatable="false">外销发票号</string>
+    <string name="search_start_date" translatable="false">起止日期</string>
+    <string name="search_end_date" translatable="false">结束日期</string>
+    <string name="search_min_amount" translatable="false">最小金额</string>
+    <string name="search_max_amount" translatable="false">最大金额</string>
+    <string name="search_amount_range" translatable="false">金额范围</string>
+    <string name="search_project" translatable="false">项目</string>
+    <string name="search_contacts" translatable="false">往来方</string>
+    <string name="search_search" translatable="false">搜 索</string>
+    <string name="search_reset" translatable="false">重置</string>
+    <string name="search_order_status" translatable="false">订单状态</string>
+    <string name="search_order_amount" translatable="false">订单金额</string>
+
+</resources>

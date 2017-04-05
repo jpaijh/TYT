@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.qskj.tyt">
+
+    <!-- 震动 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 拨打电话 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 请求网络 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 权限允许将下载的apk保存到sd卡中 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 权限允许检查网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application xmlns:tools="http://schemas.android.com/tools"
+        android:name=".MyApplication_"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        tools:replace="android:icon">
+
+        <!--
+             ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!-- 友盟AppKey -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="569dda4f67e58e1011001999" />
+        <!-- 渠道ID -->
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Channel ID" />
+        <!-- 友盟自动更新相关 -->
+        <service
+            android:name="com.umeng.update.net.DownloadingService"
+            android:process=":DownloadingService" />
+
+        <activity
+            android:name="com.umeng.update.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 百度地图相关 -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="Rqs9h0yGATxjacQNwOAqVSao" />
+
+        <!-- Loading 界面单独使用的Theme解决刚启动应用时的空白页 -->
+        <!-- 主题用的是全屏显示 android:theme="@style/AppTheme.NoActionBar.Fullscreen" -->
+        <activity
+            android:name=".activity.LoadingActivity_"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar.Fullscreen.Loading">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 登陆 -->
+        <activity
+            android:name=".activity.LoginActivity_"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateUnchanged|adjustResize" />
+        <!-- 消息中心 -->
+        <activity
+            android:name=".activity.MessageCenterActivity_"
+            android:screenOrientation="portrait" />
+        <!-- 个人信息 -->
+        <activity
+            android:name=".activity.UserInfoActivity_"
+            android:screenOrientation="portrait" />
+        <!-- 选择图片 -->
+        <activity
+            android:name=".activity.SelectPictureActivity_"
+            android:screenOrientation="portrait" />
+        <!-- 密码修改 -->
+        <activity
+            android:name=".activity.ModifyPasswordActivity_"
+            android:screenOrientation="portrait" />
+        <!-- 关于我们 -->
+        <activity
+            android:name=".activity.AboutActivity_"
+            android:screenOrientation="portrait" />
+
+        <!-- 天易通跨境相关界面 -->
+        <activity
+            android:name=".activity.BaseActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MainActivity_"
+            android:screenOrientation="portrait" />
+        <!-- 管理（（进仓管理）经营单位,货代，（入库管理）仓库） -->
+        <activity
+            android:name=".activity.CB_ManageActivity_"
+            android:screenOrientation="portrait" />
+        <!-- 管理详情（进仓管理）经营单位,货代，（入库管理）仓库 -->
+        <activity
+            android:name=".activity.CB_ManageDetailsActivity_"
+            android:screenOrientation="portrait" />
+        <!-- 进仓管理-货代-清单查看 -->
+        <activity
+            android:name=".activity.CB_ManageDetailsActivity_HD_ListCheck_"
+            android:screenOrientation="portrait" />
+
+        <!-- 进仓管理-搜索 -->
+        <activity
+            android:name=".activity.CB_ManagesSearchActivity_"
+            android:screenOrientation="portrait" />
+
+        <!-- WebView的Activity -->
+        <activity android:name=".activity.CB_WebActivity_" />
+
+        <!-- 商品管理-商品备案列表 -->
+        <activity
+            android:name=".activity.CB_CommodityManageActivity_"
+            android:screenOrientation="portrait" />
+        <!-- 商品管理-商品详情 -->
+        <activity
+            android:name=".activity.CB_CommodityDetailsActivity_"
+            android:screenOrientation="portrait" />
+        <!-- 商品搜索 -->
+        <activity
+            android:name=".activity.CB_CommoditySearchActivity_"
+            android:screenOrientation="portrait" />
+
+        <!-- 清单搜索 -->
+        <activity
+            android:name=".activity.CB_SearchActivity_ListManage_"
+            android:screenOrientation="portrait" />
+        <!-- 报关单管理-搜索 -->
+        <activity
+            android:name=".activity.CB_SearchActivity_DeclareManage_"
+            android:screenOrientation="portrait" />
+        <!-- 入库管理-搜索 -->
+        <activity
+            android:name=".activity.CB_SearchActivity_StockManage_"
+            android:screenOrientation="portrait" />
+
+        <!-- 显示大图片用的Activity -->
+        <activity android:name=".activity.CB_DisplayLargeImageActivity_" />
+
+        <!-- 百度地图-查看地图 -->
+        <activity android:name=".activity.CB_BaiduMapActivity_" />
+
+        <!-- 外贸平台 -->
+        <!-- 订单详情 -->
+        <activity
+            android:name=".activity.T_OrderFormDetailsActivity_"
+            android:screenOrientation="portrait" />
+        <!-- 专属客服 -->
+        <activity
+            android:name=".activity.T_CustomerServiceActivity_"
+            android:screenOrientation="portrait" />
+        <!-- 往来单位 -->
+        <activity
+            android:name=".activity.T_ContactsCompanyActivity_"
+            android:screenOrientation="portrait" />
+        <!-- 往来单位详情 -->
+        <activity
+            android:name=".activity.T_ContactsCompanyDetailsActivity_"
+            android:screenOrientation="portrait" />
+        <!-- 往来单位详情更多-国外（收汇信息 -->
+        <activity
+            android:name=".activity.T_ContactsCompanyDetailsMoreForeignActivity_"
+            android:screenOrientation="portrait" />
+        <!-- 往来单位详情更多-国内（资金往来） -->
+        <activity
+            android:name=".activity.T_ContactsCompanyDetailsMoreInlandActivity_"
+            android:screenOrientation="portrait" />
+
+        <!-- 我的票据 -->
+        <activity
+            android:name=".activity.T_MyInvoiceActivity_"
+            android:screenOrientation="portrait" />
+        <!-- 我的票据-开票通知详情 -->
+        <activity
+            android:name=".activity.T_InvoiceNoticeDetailsActivity_"
+            android:screenOrientation="portrait" />
+        <!-- 我的票据-发票信息详情 -->
+        <activity
+            android:name=".activity.T_InvoiceInformationProductsActivity_"
+            android:screenOrientation="portrait" />
+        <!-- 我的资金 -->
+        <activity
+            android:name=".activity.T_MyFundActivity_"
+            android:screenOrientation="portrait" />
+        <!-- 我的资金-普通,融资账户列表详情 -->
+        <activity
+            android:name=".activity.T_AccountFundDetailsActivity_"
+            android:screenOrientation="portrait" />
+        <!-- 收汇通知 -->
+        <activity
+            android:name=".activity.T_NoticeForeignExchangeActivity_"
+            android:screenOrientation="portrait" />
+        <!-- 收汇通知详情-->
+        <activity
+            android:name=".activity.T_NoticeForeignExchangeDetailsActivity_"
+            android:screenOrientation="portrait" />
+        <!-- 新建收汇通知 -->
+        <activity
+            android:name=".activity.T_NewNoticeForeignExchangeActivity_"
+            android:screenOrientation="portrait" />
+        <!-- 申请提款 -->
+        <activity
+            android:name=".activity.T_ApplyPaymentActivity_"
+            android:screenOrientation="portrait" />
+        <!-- 申请提款列表详情 -->
+        <activity
+            android:name=".activity.T_ApplyPaymentDetailsActivity_"
+            android:screenOrientation="portrait" />
+        <!-- 申请提款-提款 界面 -->
+        <activity
+            android:name=".activity.T_PaymentActivity_"
+            android:screenOrientation="portrait" />
+        <!-- 预警中心 -->
+        <activity
+            android:name=".activity.T_WarningCenterActivity_"
+            android:screenOrientation="portrait" />
+        <!-- 订单搜索 -->
+        <activity
+            android:name=".activity.T_SearchOrderFormActivity_"
+            android:screenOrientation="portrait" />
+        <!-- 我的资金-账户搜索 -->
+        <activity
+            android:name=".activity.T_AccountSearchActivity_"
+            android:screenOrientation="portrait" />
+        <!-- 我的-抬头切换 -->
+        <activity
+            android:name=".activity.T_TitleChangeActivity_"
+            android:screenOrientation="portrait" />
+
+    </application>
+
+</manifest>

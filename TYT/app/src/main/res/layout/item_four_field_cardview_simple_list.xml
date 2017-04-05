@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MyCardView"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp">
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/selector_mine_item_background"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:id="@+id/ll_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:addStatesFromChildren="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.qskj.tyt.view.AlwaysMarqueeTextView
+                android:id="@+id/tv_top_left"
+                style="@style/AlwaysMarqueeTextView_BigSize"
+                android:text="左上" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_top_right"
+                style="@style/AppcompatTextView_PaddingLeft5_BigSize"
+                android:text="右上" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_down"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:addStatesFromChildren="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.qskj.tyt.view.AlwaysMarqueeTextView
+                android:id="@+id/tv_down_left"
+                style="@style/AlwaysMarqueeTextView_NormalSize"
+                android:text="左下" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_down_right"
+                style="@style/AppcompatTextView_PaddingLeft5_NormalSize"
+                android:text="右下" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

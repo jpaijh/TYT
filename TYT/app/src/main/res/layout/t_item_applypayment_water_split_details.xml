@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="水单拆分（1）"
+        android:textColor="@color/color_theme"
+        android:textSize="@dimen/textSize_16sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_water_split"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- 外销发票号 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:weightSum="2">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/split_orderCode"
+                android:textColor="#747474"
+                android:textSize="@dimen/textSize_12sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_split_orderCode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:textSize="@dimen/textSize_12sp" />
+
+        </LinearLayout>
+
+        <!--  增票金额-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:weightSum="2">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/split_zpAmount"
+                android:textColor="#747474"
+                android:textSize="@dimen/textSize_12sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_split_zpAmount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:textSize="@dimen/textSize_12sp" />
+
+        </LinearLayout>
+
+        <!-- 已提金额 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:weightSum="2">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/split_slipedAmount"
+                android:textColor="#747474"
+                android:textSize="@dimen/textSize_12sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_split_slipedAmount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:textSize="@dimen/textSize_12sp" />
+
+        </LinearLayout>
+
+        <!-- 未提金额 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:weightSum="2">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/split_amount"
+                android:textColor="#747474"
+                android:textSize="@dimen/textSize_12sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_split_amount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:textSize="@dimen/textSize_12sp" />
+
+        </LinearLayout>
+
+        <!-- 结算金额 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:weightSum="2">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/split_actualAmount"
+                android:textColor="#747474"
+                android:textSize="@dimen/textSize_12sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_split_actualAmount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:textSize="@dimen/textSize_12sp" />
+
+        </LinearLayout>
+
+        <!-- 提款是否完成 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:weightSum="2">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/split_slipCompleted"
+                android:textColor="#747474"
+                android:textSize="@dimen/textSize_12sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_split_slipCompleted"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:textSize="@dimen/textSize_12sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

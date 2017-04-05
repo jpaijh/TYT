@@ -1,0 +1,45 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_loading" />
+
+    <LinearLayout
+        android:id="@+id/ll_btns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:padding="30dp"
+        android:visibility="gone">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_crossBorder"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_btn_login_tyt"
+            android:text="跨境服务平台"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_14sp" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_trading"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_btn_login_tyt"
+            android:text="外贸服务平台"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_14sp" />
+
+    </LinearLayout>
+
+</FrameLayout>

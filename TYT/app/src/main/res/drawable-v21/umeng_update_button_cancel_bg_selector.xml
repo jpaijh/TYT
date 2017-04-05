@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/color_ripple_btn">
+
+    <item>
+        <selector>
+            <item
+                android:drawable="@drawable/umeng_update_button_cancel_bg_normal"
+                android:state_focused="false"
+                android:state_pressed="false" />
+        </selector>
+    </item>
+
+</ripple>

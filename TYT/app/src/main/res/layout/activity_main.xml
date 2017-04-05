@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar_title_center" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/radio_group"
+        android:layout_below="@+id/toolbar" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/radioGroup_bg_color"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/rb_home"
+            style="@style/tabhost"
+            android:drawableTop="@drawable/selector_tabhost_rb_home"
+            android:text="@string/home" />
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/rb_orderForm"
+            style="@style/tabhost"
+            android:drawableTop="@drawable/selector_tabhost_rb_orderform"
+            android:text="@string/orderform"
+            android:visibility="gone" />
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/rb_tools"
+            style="@style/tabhost"
+            android:drawableTop="@drawable/selector_tabhost_rb_tools"
+            android:text="@string/tools" />
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/rb_mine"
+            style="@style/tabhost"
+            android:drawableTop="@drawable/selector_tabhost_rb_mine"
+            android:text="@string/mine" />
+
+    </RadioGroup>
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_title_left" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_versionName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/ic_login_logo_tyt"
+                android:gravity="center"
+                android:paddingTop="20dp"
+                android:text="版本:"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize_14sp"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:text="我们是谁？"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize_18sp"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="15dp"
+                android:text="天易通是开放式的免费公共跨境平台，天易通允许各经营单位和货代公司无门槛使用平台特有的“监装报关模式”，同时亦可享受到平台拥有的其他便利服务，如提供中小微企业的商检服务、搭建信保投保桥梁。自2015年5月起，天易通已被宁波海关认定为宁波市跨境贸易电子商务出口试点平台。\n\n天易通是上市公司宁波联合集团股份有限公司旗下的专业外贸综合服务平台，不仅能为出口代理企业提供一站式制单、通关、物流、仓储和结算、退税、信保、融资等专业化、规模化服务，而且以电子商务的平台资源，为企业降低出口成本，出口风险，解决出口商企业融资难题、服务难题，有效帮助诸多企业快速发展。\n\n我们依托上市公司雄厚的财力、专业的管理经验、强大的人才队伍及良好的海关信用等级资质，在同业中具备独特的竞争优势。 "
+                android:textColor="@color/mine_text_username"
+                android:textSize="@dimen/textSize_14sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:text="服务宗旨"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize_18sp"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="15dp"
+                android:text="1、核心理念：服务创造价值\n我们更新理念，完善网络，提升技术，改进流程，无一不用其极，最终目标却只有一个——最大化的“创造价值”。一旦企业价值实现，个人自我价值和企业公益价值的发现活动也宣告开始。\n\n2、经营理念：超值服务，共存共荣\n以自身对服务品质的孜孜以求，让客户得到高于成本支出的享受，而我们自身也从中提升管理，赢得市场，这正是双方所共同追求的目标。我们始终坚持以客为尊、为客户着想，根据不同客户的需求量身订制方案，不仅代您办理进出口各类繁琐的手续，还凭借公司雄厚的实力和渠道，为您在信用证开立、远期外汇买卖、物流服务、融资、信用保险等方面提供优质服务。\n\n3、管理理念：超越标准，精益求精\n“让客户满意”就是要求我们超越标准，精益求精。作为上市公司宁波联合集团股份有限公司的控股子公司，我们的内部管理严格和规范，公司始终秉承诚实守信的理念，打造“联合”过硬的口碑。\n\n4、服务理念：尽心尽力，尽善尽美\n我们深耕宁波进出口代理业务20余载，有一支多年从事进出口代理的稳定团队，业务骨干普遍都有从业多年的丰富经验，能及时帮您解决进出口过程中遇到的各类问题。做得让同仁放心，让上级满意，让客户赞赏，做出水平，做出典范，做出效果。没有最好，只有更好，完美不可能存在，但它永远存在于我们的追求之中。我们期待着，成为您可以依赖的伙伴，为您的成长助力。\n\n5、人才理念：唯贤是举，唯能是用\n“以人为本”是贤能生长的土壤，“唯贤是举，唯能是用”是人才进阶的法则，也是企业能够长期盈利和发展的必由之路。"
+                android:textColor="@color/mine_text_username"
+                android:textSize="@dimen/textSize_14sp" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MyCardView"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/selector_mine_item_background"
+        android:clickable="true"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:addStatesFromChildren="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <!-- 进仓编号-->
+            <com.qskj.tyt.view.AlwaysMarqueeTextView
+                android:id="@+id/tv_storageListGrid_deliveryInvoiceCode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textColor="#444444"
+                android:textSize="@dimen/textSize_16sp"
+                android:textStyle="bold"
+                android:text="@string/storageListGrid_deliveryInvoiceCode"
+                 />
+
+            <!-- 状态 -->
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_storageListGrid_storageStatus"
+                android:text="@string/storageListGrid_storageStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:textSize="@dimen/textSize_14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- 提单编号 -->
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_storageListGrid_blNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll"
+            android:text="@string/storageListGrid_blNo"
+            android:textSize="@dimen/textSize_12sp" />
+
+        <LinearLayout
+            android:id="@+id/ll2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_storageListGrid_blNo"
+            android:addStatesFromChildren="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <!-- 经营单位-->
+            <com.qskj.tyt.view.AlwaysMarqueeTextView
+                android:id="@+id/tv_storageListGrid_businessEnterpriseName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="@string/storageListGrid_businessEnterpriseName"
+                android:textSize="@dimen/textSize_12sp" />
+
+            <!-- 进仓单创建日期 -->
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_storageListGrid_deliveryDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="@string/storageListGrid_deliveryDate"
+                android:textSize="@dimen/textSize_12sp" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="wrap_content"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/ll2"
+            android:layout_marginTop="10dp"
+            android:background="@color/textView_home_bg" />
+
+        <!--查看详情-->
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/line"
+            android:layout_marginTop="5dp"
+            android:drawablePadding="5dp"
+            android:drawableRight="@mipmap/ic_arrow_next"
+            android:text="@string/check_details"
+            android:textSize="@dimen/textSize_11sp" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

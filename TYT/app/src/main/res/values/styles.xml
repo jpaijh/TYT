@@ -1,0 +1,267 @@
+<resources>
+
+    <!--1.colorPrimary: Toolbar导航栏的底色。-->
+    <!--2.colorPrimaryDark：状态栏的底色，注意这里只支持Android5.0以上的手机。-->
+    <!--3.textColorPrimary：整个当前Activity的字体的默认颜色。-->
+    <!--4.android:windowBackground：当前Activity的窗体颜色。-->
+    <!--5.colorAccent：CheckBox，RadioButton，SwitchCompat等控件的点击选中颜色-->
+    <!--6.colorControlNormal：CheckBox，RadioButton，SwitchCompat等默认状态的颜色。-->
+    <!--7.colorButtonNormal：默认状态下Button按钮的颜色。-->
+    <!--8.editTextColor：默认EditView输入框字体的颜色。-->
+
+    <!-- 普通Activity的Theme：默认黑色ActionBar，这样Title字体颜色图标颜色就是白色的，已修改成主题色的ActionBar -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- ActionBar背景颜色（目前用的自定义的Toolbar,没有用到这个属性 app:contentScrim="?attr/colorPrimary"）-->
+        <!--<item name="colorPrimary">@color/color_theme</item>-->
+        <!--  ActionBar字体颜色 ,整个当前Activity的字体的默认颜色-->
+        <!--<item name="android:textColorPrimary">@color/toolbar_titile</item>-->
+
+        <!-- 顶部导航栏颜色，默认黑色 -->
+        <item name="colorPrimaryDark">@color/color_navigation_bar</item>
+        <!-- 窗体颜色：默认淡灰色，有其他需要可以自己定义相应布局的背景颜色 -->
+        <!--<item name="android:windowBackground">@android:color/white</item>-->
+        <!-- 去除 ActionBar 下拉时出现的底部阴影-->
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- EditTex 获取焦点的下面那条线的颜色,FloadingButton 颜色-->
+        <item name="colorAccent">@color/color_edit_text_line</item>
+        <!-- EditText 输入框输入字体时的颜色-->
+        <item name="android:editTextColor">@color/color_text_focus</item>
+        <!-- EditText 输入框失去焦点字体的颜色-->
+        <item name="android:textColorHint">@color/color_text_unFocus</item>
+
+        <item name="sublimePickerStyle">@style/SPDefaultImpl</item>
+
+    </style>
+
+    <!--NoActionBar，带导航栏-->
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- Fullscreen 全屏显示，不带导航栏-->
+    <style name="AppTheme.NoActionBar.Fullscreen">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!-- Loading界面单独使用的主题-->
+    <style name="AppTheme.NoActionBar.Fullscreen.Loading">
+        <!-- 为了让第一个启动的界面 Loading 界面开启应用时不显示空白页，特地给Loading界面单独使用的,显示的是Loading图片-->
+        <!-- 所以如果Loading界面的图片修改了，这里也要改-->
+        <item name="android:windowBackground">@mipmap/ic_loading</item>
+    </style>
+
+    <!-- 主页底部：TableHost-->
+    <style name="tabhost">
+        <item name="android:textSize">@dimen/textSize_12sp</item>
+        <item name="android:textColor">@drawable/selector_tabhost_text_color</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">0dp</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <!-- 登录界面：editText-->
+    <style name="editText">
+        <item name="android:textSize">@dimen/textSize_14sp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">30dp</item>
+        <item name="android:layout_marginRight">30dp</item>
+    </style>
+
+    <!-- 个人信息界面 -->
+    <style name="userInfo_RelativeLayout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/selector_mine_item_background</item>
+        <item name="android:clickable">true</item>
+        <item name="android:padding">15dp</item>
+    </style>
+
+    <style name="userInfo_AppcompatTextView1">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSize_14sp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textColor">@color/mine_text_username</item>
+    </style>
+
+    <style name="userInfo_AppcompatTextView2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSize_14sp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:text">天易通</item>
+        <item name="android:textColor">@color/mine_text_mail</item>
+    </style>
+
+    <style name="userInfo_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:background">#f2f2f2</item>
+    </style>
+
+    <!-- 百度地图界面：AppCompatImageView-->
+    <style name="BaiduMap_AppCompatImageView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:clickable">true</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:paddingTop">10dp</item>
+    </style>
+
+    <!-- 商品管理-商品详情界面 -->
+    <style name="CommodityListDetails_LinearLayout1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="CommodityListDetails_LinearLayout2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:weightSum">5</item>
+    </style>
+
+    <style name="CommodityListDetails_AppcompatTextView1">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:textColor">#606060</item>
+        <item name="android:textSize">@dimen/textSize_12sp</item>
+    </style>
+
+    <style name="CommodityListDetails_AppcompatTextView2">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_weight">3</item>
+        <item name="android:textColor">#333333</item>
+        <item name="android:textSize">@dimen/textSize_12sp</item>
+    </style>
+
+    <style name="CommodityListDetails_line1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">#dcdcdc</item>
+    </style>
+
+    <style name="CommodityListDetails_line2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:background">#eaeaea</item>
+    </style>
+
+    <!--各管理列表-->
+    <style name="AlwaysMarqueeTextView_BigSize">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">#444444</item>
+        <item name="android:textSize">@dimen/textSize_16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AlwaysMarqueeTextView_NormalSize">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/textSize_12sp</item>
+    </style>
+
+    <style name="AppcompatTextView_PaddingLeft5_BigSize">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:textSize">@dimen/textSize_14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AppcompatTextView_PaddingLeft5_NormalSize">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:textSize">@dimen/textSize_12sp</item>
+    </style>
+
+    <!-- 各管理界面RecyclerView中的item:CardView -->
+    <style name="MyCardView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+
+    <style name="MyAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!--确定和取消按钮字体的颜色,系统默认是系统的颜色-->
+        <item name="colorAccent">@color/color_theme</item>
+        <!--Title,Content 字体的颜色，系统默认黑色-->
+        <!--<item name="android:textColorPrimary">@color/black</item>-->
+        <!-- AlertDialog背景的颜色,系统默认白色-->
+        <!--<item name="android:background">@color/white</item>-->
+    </style>
+
+    <style name="MyProgressDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!--ProgressBar颜色,系统默认是系统的颜色-->
+        <item name="colorAccent">@color/color_theme</item>
+        <!-- 字体的颜色，系统默认灰色-->
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!-- 自定义日期控件：popupwindow的动画-->
+    <style name="Popup_Animation_Alpha" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/layout_alpha_in</item>
+        <item name="android:windowExitAnimation">@anim/layout_alpha_out</item>
+    </style>
+
+    <!-- 日期时间控件:SublimePickerStyle  -->
+    <style name="SPDefaultImpl" parent="SublimePickerStyleLight">
+        <item name="colorAccent">@color/color_theme_light</item>
+        <item name="colorPrimaryDark">@color/color_theme_tint</item>
+        <item name="colorPrimary">@color/color_theme</item>
+        <item name="android:textColorPrimary">#212121</item>
+        <item name="android:textColorSecondary">#727272</item>
+        <item name="android:textColorPrimaryInverse">#FFFFFF</item>
+    </style>
+
+</resources>

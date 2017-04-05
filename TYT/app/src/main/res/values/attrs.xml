@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="pull">
+        <attr name="header" format="reference|integer" />
+        <attr name="maxHeaderHeight" format="reference|dimension" />
+        <attr name="minHeaderHeight" format="reference|dimension" />
+    </declare-styleable>
+
+    <!-- 时间线 TimeLineMarker-->
+    <declare-styleable name="TimeLineMarker">
+        <attr name="markerSize" format="dimension" />
+        <attr name="marker" format="color|reference" />
+        <attr name="beginLine" format="color|reference" />
+        <attr name="endLine" format="color|reference" />
+        <attr name="lineSize" format="dimension" />
+    </declare-styleable>
+</resources>
